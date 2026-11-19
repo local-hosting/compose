@@ -1,4 +1,4 @@
-import type { LabelMap, LocalSymbolTablePack } from '@local-hosting/wire'
+import type { LabelMap, LocalSymbolTablePack } from '@local-hosting/frames'
 import { SUPPORTED_LANGUAGES } from '../src/languages.js'
 
 /** Shared tip: family everyday + crisis resilience labels. */
