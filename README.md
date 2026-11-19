@@ -8,7 +8,7 @@ spatial-ai → ai → compose → wire
                languages + text→frame
 ```
 
-This repo owns **`SUPPORTED_LANGUAGES`** and compose. Wire stays grammar-only. Optional neural compose lives in `@local-hosting/ai` (basic) / `@local-hosting/spatial-ai` (spatial layer) and should depend on **compose**, not wire directly.
+This repo owns **`SUPPORTED_LANGUAGES`** and compose. Wire stays grammar-only. Optional neural compose lives in `@local-hosting/local-ai` (basic) / `@local-hosting/spatial-ai` (spatial layer) and should depend on **compose**, not wire directly.
 
 ```ts
 import { composeWords, SUPPORTED_LANGUAGES } from '@local-hosting/compose'
