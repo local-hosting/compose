@@ -11,6 +11,11 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
       "default": "./dist/index.js"
+    },
+    "./thin": {
+      "types": "./dist/thin/index.d.ts",
+      "import": "./dist/thin/index.js",
+      "default": "./dist/thin/index.js"
     }
   },
   "types": "./dist/index.d.ts",
@@ -29,6 +34,7 @@
     "test:watch": "vitest"
   },
   "dependencies": {
+    "@local-hosting/comms": "0.3.0",
     "@local-hosting/frames": "0.1.0"
   },
   "devDependencies": {

@@ -1,9 +1,46 @@
 export { composeWords, type ComposeWordsResult } from './compose-words.js'
+export { composeFromVocabulary } from './compose-from-vocabulary.js'
+export {
+  composeIntentToCompact,
+  type IntentBodyIds,
+} from './intent-from-vocabulary.js'
 export {
   SUPPORTED_LANGUAGES,
   isSupportedLanguage,
   type SupportedLanguage,
 } from './languages.js'
+export { resolvePackId, PACK_IDS, type PackMode, type PackId } from './types/pack-mode.js'
+export {
+  type Vocabulary,
+  type VocabEvent,
+  type VocabAction,
+  type VocabPlace,
+  type VocabResource,
+  type VocabActor,
+  type VocabDefaults,
+  type LabeledId,
+} from './types/vocabulary.js'
+export {
+  vocabularyToSymbolTable,
+  vocabularyToVocabSnapshot,
+  vocabularyToVocabStore,
+  vocabularyTip,
+  vocabularyEntries,
+} from './vocabulary-table.js'
+export {
+  vocabularyToLabelPack,
+  englishLabel,
+  labelInLang,
+  codeForId,
+  idForCode,
+  codesForIds,
+  allLabeledRows,
+} from './vocabulary-labels.js'
+export {
+  applyWireCrosswalk,
+  type ComposeCrosswalkRow,
+} from './wire-crosswalk.js'
+export { defaultActionIdsForEvent } from './defaults-intent.js'
 
 /** Re-export frames so apps (including AI) depend on compose → frames, not frames directly. */
 export {
