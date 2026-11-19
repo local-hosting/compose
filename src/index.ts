@@ -1,0 +1,58 @@
+export { composeWords, type ComposeWordsResult } from './compose-words.js'
+export {
+  SUPPORTED_LANGUAGES,
+  isSupportedLanguage,
+  type SupportedLanguage,
+} from './languages.js'
+
+/** Re-export wire so apps (including AI) depend on compose → wire, not wire directly. */
+export {
+  REPORT_DEMAND,
+  REPORT_OFFER,
+  SYMBOL_ACK,
+  SYMBOL_BASE,
+  SYMBOL_DIGEST,
+  SYMBOL_INTENT,
+  SYMBOL_NARRATIVE,
+  SYMBOL_PATTERN,
+  SYMBOL_QUERY,
+  SYMBOL_RATING,
+  SYMBOL_READING,
+  SYMBOL_REPORT,
+  SYMBOL_SIGNAL,
+  SYMBOL_TREND,
+  SYMBOL_VERIFY,
+  buildCrosswalkIndex,
+  codesToCompact,
+  compactToIntent,
+  compressIds,
+  createVocabSnapshot,
+  createVocabStore,
+  decodeSymbolEnvelope,
+  encodeSymbolEnvelope,
+  expandCodes,
+  expandCompactFrame,
+  expandWithStore,
+  fingerprintEntries,
+  idToLegacy,
+  intentCodec,
+  intentPackedCodec,
+  intentToCompact,
+  labelsForIds,
+  legacyToId,
+  mergeCrosswalkIntoTable,
+  resolveCodeById,
+  resolveIdByCode,
+  snapshotToTable,
+} from '@local-hosting/wire'
+
+export type {
+  CompactFrame,
+  LabelMap,
+  LocalSymbolTablePack,
+  SymbolEnvelope,
+  SymbolKind,
+  SymbolTableEntry,
+  VocabSnapshot,
+  VocabStore,
+} from '@local-hosting/wire'
