@@ -3,12 +3,12 @@
 Always-on, **non-AI** human text → `@local-hosting/wire` frames (lexicon / rules).
 
 ```
-ai  →  compose  →  wire
-         ↑
-   languages + text→frame
+spatial-ai → ai → compose → wire
+                     ↑
+               languages + text→frame
 ```
 
-This repo owns **`SUPPORTED_LANGUAGES`** and compose. Wire stays grammar-only. Optional neural compose lives in `@local-hosting/ai` and should depend on **compose**, not wire directly.
+This repo owns **`SUPPORTED_LANGUAGES`** and compose. Wire stays grammar-only. Optional neural compose lives in `@local-hosting/ai` (basic) / `@local-hosting/spatial-ai` (spatial layer) and should depend on **compose**, not wire directly.
 
 ```ts
 import { composeWords, SUPPORTED_LANGUAGES } from '@local-hosting/compose'
