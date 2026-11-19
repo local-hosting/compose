@@ -235,7 +235,7 @@ export function composeWords(
   if (matched.length === 0) {
     return {
       ok: false,
-      reason: 'no vocab matches — try labels like notify, lobby, ops',
+      reason: 'no vocab matches — try labels like notify, lobby, staff',
       unmatched,
     }
   }
