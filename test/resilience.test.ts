@@ -6,7 +6,7 @@ import {
   SYMBOL_QUERY,
   SYMBOL_REPORT,
   SYMBOL_VERIFY,
-} from '@local-hosting/wire'
+} from '@local-hosting/frames'
 import { composeWords } from '../src/index.js'
 import { labels, table } from './fixtures.js'
 

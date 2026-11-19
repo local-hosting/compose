@@ -5,7 +5,7 @@ export {
   type SupportedLanguage,
 } from './languages.js'
 
-/** Re-export wire so apps (including AI) depend on compose → wire, not wire directly. */
+/** Re-export frames so apps (including AI) depend on compose → frames, not frames directly. */
 export {
   REPORT_DEMAND,
   REPORT_OFFER,
@@ -44,10 +44,11 @@ export {
   resolveCodeById,
   resolveIdByCode,
   snapshotToTable,
-} from '@local-hosting/wire'
+} from '@local-hosting/frames'
 
 export type {
   CompactFrame,
+  IntentBody,
   LabelMap,
   LocalSymbolTablePack,
   SymbolEnvelope,
@@ -55,4 +56,4 @@ export type {
   SymbolTableEntry,
   VocabSnapshot,
   VocabStore,
-} from '@local-hosting/wire'
+} from '@local-hosting/frames'

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { SYMBOL_QUERY, SYMBOL_REPORT } from '@local-hosting/wire'
+import { SYMBOL_QUERY, SYMBOL_REPORT } from '@local-hosting/frames'
 import { composeWords } from '../src/index.js'
 import { labels, table } from './fixtures.js'
 

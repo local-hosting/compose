@@ -1,14 +1,14 @@
 # `@local-hosting/compose`
 
-Always-on, **non-AI** human text → `@local-hosting/wire` frames (lexicon / rules).
+Always-on, **non-AI** human text → `@local-hosting/frames` (lexicon / rules).
 
 ```
-spatial-ai → ai → compose → wire
+spatial-ai → local-ai → compose → frames
                      ↑
                languages + text→frame
 ```
 
-This repo owns **`SUPPORTED_LANGUAGES`** and compose. Wire stays grammar-only. Optional neural compose lives in `@local-hosting/local-ai` (basic) / `@local-hosting/spatial-ai` (spatial layer) and should depend on **compose**, not wire directly.
+This repo owns **`SUPPORTED_LANGUAGES`** and compose. **Frames** stays grammar-only. Optional neural compose lives in `@local-hosting/local-ai` (basic) / `@local-hosting/spatial-ai` (spatial layer) and should depend on **compose**, not frames directly.
 
 ```ts
 import { composeWords, SUPPORTED_LANGUAGES } from '@local-hosting/compose'
@@ -52,4 +52,4 @@ yarn install
 yarn build && yarn test
 ```
 
-Depends on `@local-hosting/wire` via the parent `@local-hosting/root` yarn workspaces (install from `local-hosting/`).
+Depends on `@local-hosting/frames` via the parent workspace (install from `local-hosting/` after cloning `frames`).

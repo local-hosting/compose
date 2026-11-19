@@ -13,7 +13,7 @@ import {
   type LabelMap,
   type LocalSymbolTablePack,
   type SymbolKind,
-} from '@local-hosting/wire'
+} from '@local-hosting/frames'
 
 export type ComposeWordsResult =
   | {
