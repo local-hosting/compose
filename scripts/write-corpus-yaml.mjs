@@ -5,14 +5,26 @@ import { stringify as stringifyYaml } from 'yaml'
 
 const pkgRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 
+function corpusFile(id) {
+  if (id === 'everyday-spatial') {
+    return { dir: path.join('messages', 'daily'), file: 'spatial.yaml' }
+  }
+  if (id === 'everyday-reports') {
+    return { dir: path.join('messages', 'daily'), file: 'reports.yaml' }
+  }
+  if (id === 'everyday') {
+    return { dir: path.join('messages', 'daily'), file: 'corpus.yaml' }
+  }
+  if (id === 'resilience') {
+    return { dir: path.join('messages', id), file: 'corpus.yaml' }
+  }
+  return { dir: path.join('messages', 'resilience'), file: `${id}.yaml` }
+}
+
 export function writeCorpusYaml(id, meta, messages) {
-  const subdir =
-    id === 'everyday' || id === 'resilience'
-      ? path.join('messages', id)
-      : path.join('messages', 'resilience')
+  const { dir: subdir, file: filename } = corpusFile(id)
   const dir = path.join(pkgRoot, subdir)
   mkdirSync(dir, { recursive: true })
-  const filename = id === 'everyday' || id === 'resilience' ? 'corpus.yaml' : `${id}.yaml`
   const file = path.join(dir, filename)
   const doc = {
     version: 1,

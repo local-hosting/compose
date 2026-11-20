@@ -10,7 +10,16 @@ export function composePackageRoot(): string {
 
 export function messageCorpusYamlPath(id: MessageCorpusId): string {
   const root = composePackageRoot()
-  if (id === 'everyday' || id === 'resilience') {
+  if (id === 'everyday-spatial') {
+    return path.join(root, 'messages', 'daily', 'spatial.yaml')
+  }
+  if (id === 'everyday-reports') {
+    return path.join(root, 'messages', 'daily', 'reports.yaml')
+  }
+  if (id === 'everyday') {
+    return path.join(root, 'messages', 'daily', 'corpus.yaml')
+  }
+  if (id === 'resilience') {
     return path.join(root, 'messages', id, 'corpus.yaml')
   }
   return path.join(root, 'messages', 'resilience', `${id}.yaml`)

@@ -1,38 +1,45 @@
 /**
- * Build 100 resilience-style social messages (Ready.gov / EIN patterns, paraphrased).
+ * Build 100 resilience-style social messages (neighbor / family SMS tone).
  * Output: compose/messages/resilience/resilience-synthetic.yaml
  */
 import { writeCorpusYaml } from './write-corpus-yaml.mjs'
 
 const QUESTION_TEMPLATES = [
-  ['Where is the nearest shelter open right now?', 'en', 'where_to_go'],
-  ['Any open evacuation center near me?', 'en', 'where_to_go'],
-  ['flash flood warning — should we leave?', 'en', 'what_to_do'],
-  ['How long will this smoke last?', 'en', 'how_long'],
-  ['Is it safe for kids outside?', 'en', 'is_it_safe_for_kids'],
-  ['Can I drive through the water on 3rd?', 'en', 'is_it_safe_outside'],
-  ['¿Dónde hay refugio cerca?', 'es', 'where_to_go'],
-  ['¿Cuánto durará la alerta?', 'es', 'how_long'],
-  ['Où est le refuge le plus proche?', 'fr', 'where_to_go'],
-  ["C'est safe dehors pour les enfants?", 'fr', 'is_it_safe_for_kids'],
+  ['Anyone know if the nearest shelter is still taking people?', 'en', 'where_to_go'],
+  ['We are torn — should we leave now or wait for the official notice?', 'en', 'what_to_do'],
+  ['How long is this smoke supposed to last?', 'en', 'how_long'],
+  ['Is it safe for the kids to wait outside the school gym?', 'en', 'is_it_safe_for_kids'],
+  ['Can we drive through the standing water on Oak or is that reckless?', 'en', 'is_it_safe_outside'],
+  ['Where can I go if the basement floods tonight?', 'en', 'where_to_go'],
+  ['What should I do if the siren goes off again?', 'en', 'what_to_do'],
+  ['Where is the nearest open shelter? Neighbors say the line is huge.', 'en', 'where_to_go'],
+  ['¿Dónde hay refugio cerca? El grupo de WhatsApp no coincide', 'es', 'where_to_go'],
+  ['¿Cuánto durará la alerta de humo?', 'es', 'how_long'],
+  ['Les enfants peuvent-ils sortir dehors ce soir?', 'fr', 'is_it_safe_for_kids'],
+  ['Où est le refuge le plus proche qui accepte encore des gens?', 'fr', 'where_to_go'],
 ]
 
 const REPORT_TEMPLATES = [
-  ['Water rising fast on our block — need shelter info', 'en'],
-  ['Lost power, smoke thick, anyone know hospital status?', 'en'],
-  ['Just felt another shake, ceiling cracked', 'en'],
-  ['Stuck on highway, evacuation order — where to go?', 'en'],
-  ['Neighborhood flooded knee deep, can’t reach main road', 'en'],
-  ['Air quality terrible, kids coughing', 'en'],
-  ['Volunteers needed at school gym — sharing location', 'en'],
-  ['River overcame the levee downstream', 'en'],
-  ['Trees down, roads blocked near the clinic', 'en'],
-  ['Using phone battery last bar — texting not calling', 'en'],
-  ['Agua subiendo rápido — necesitamos refugio', 'es'],
-  ['Humo horrible, ¿hay centro de evacuación?', 'es'],
-  ['Otro temblor fuerte, edificio dañado', 'es'],
-  ['Inondation rue principale impossible sortir', 'fr'],
-  ['Fumée incendie — où aller?', 'fr'],
+  ['Group chat: water is rising on our block — basements are flooding', 'en'],
+  ['Power died, smoke smells thick, trying to find out if the hospital is open', 'en'],
+  ['Just felt another shake — cracks in the living room ceiling', 'en'],
+  ['Stuck in traffic with an evac order — which way is everyone going?', 'en'],
+  ['Street flooded knee-deep, cannot get to the main road from here', 'en'],
+  ['Air quality is awful and the kids are coughing all night', 'en'],
+  ['Dropping supplies at the school gym if anyone needs a ride there', 'en'],
+  ['River jumped the levee downstream from us — water moving fast', 'en'],
+  ['Trees down across the road by the clinic — sharing in case you are headed that way', 'en'],
+  ['Phone at 4% — texting only, no calls', 'en'],
+  ['Peor aquí: humo entrando por las ventanas', 'es'],
+  ['Perdimos luz y hay mucho humo — ¿saben si hay refugio abierto?', 'es'],
+  ['Otro sismo fuerte, daños en el edificio de al lado', 'es'],
+  ['Ça empire ici — rue principale inondée, on ne peut plus sortir', 'fr'],
+  ['Fumée partout — on cherche où aller avec les enfants', 'fr'],
+  ['We are safe upstairs for now, just noisy', 'en'],
+  ['Need help — grandma cannot get down the stairs and water is in the yard', 'en'],
+  ['Power back briefly but the alert says flood warning again', 'en'],
+  ['Car packed; heading toward Emergency shelter if the road stays open', 'en'],
+  ['Sensor on the porch keeps failing — readings look wrong', 'en'],
 ]
 
 const SESSION_OFFSETS = [
@@ -75,4 +82,6 @@ while (messages.length < 100) {
   n += 1
 }
 
-writeCorpusYaml('resilience-synthetic', { description: 'Paraphrased Ready.gov-style prompts' }, messages)
+writeCorpusYaml('resilience-synthetic', {
+  description: 'Neighbor and family SMS during flood, wildfire smoke, and quake',
+}, messages)

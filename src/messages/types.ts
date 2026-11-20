@@ -2,6 +2,8 @@ import type { SupportedLanguage } from '../languages.js'
 
 export type MessageCorpusId =
   | 'everyday'
+  | 'everyday-reports'
+  | 'everyday-spatial'
   | 'resilience'
   | 'resilience-synthetic'
   | 'resilience-crisislex'
@@ -26,6 +28,22 @@ export type MessageSession = {
   geotype?: string
 }
 
+/** Map gold for reports (lexicon + compose-vocabulary overlay). */
+export type ReportMapExpect = {
+  /** Assert `mapReportLexicon` report_type when set. */
+  report_type?:
+    | 'worse_here'
+    | 'better_here'
+    | 'sensor_broken'
+    | 'need_help'
+    | 'im_safe'
+    | 'other'
+  /** When true, assert `mapReportComposeFirst` spine fields. */
+  compose_first?: boolean
+  event_ref?: string | null
+  place_id?: string | null
+}
+
 /** Gold or tightened rubric for live local-ai compose eval (optional). */
 export type ComposeIntentExpect = {
   /** Each actor row: every action_id must be in this list (local-ai eval semantics). */
@@ -39,6 +57,7 @@ export type MessageRow = {
   lang: SupportedLanguage
   kind: MessageKind
   expect?: ComposeExpect
+  expect_map?: ReportMapExpect
   expected_map_label?: string
   expected_place_id?: string
   session?: MessageSession

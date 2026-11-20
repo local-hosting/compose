@@ -5,75 +5,113 @@ meta:
   description: Off-grid resilience (composeWords; spatial benches in sibling YAML)
 messages:
   - id: res_01
-    text: We need lodging for three families tonight 🏠
+    text: We need lodging for three families tonight
     lang: en
     kind: report
+    session:
+      lat: 37.777
+      lon: -122.43
     expect:
       compose_ok: true
       symbol: report
       offer: demand
       resource_code: 53
+    expect_map:
+      report_type: other
   - id: res_02
-    text: Offering food at the shelter — come by if you can 🍞
+    text: Offering extra food at the shelter — come by if you can
     lang: en
     kind: report
+    session:
+      lat: 37.775
+      lon: -122.422
+      geotype: shelter
     expect:
       compose_ok: true
       symbol: report
       offer: offer
       resource_code: 54
       place_code: 22
+    expect_map:
+      report_type: other
   - id: res_03
     text: Is the shelter open right now?
     lang: en
     kind: question
+    session:
+      lat: 37.775
+      lon: -122.422
     expect:
       compose_ok: true
       symbol: query
       place_code: 22
   - id: res_04
-    text: Flood is rising — evacuate now, high priority 🚨
+    text: Flood is rising on our street — evacuate now, high priority
     lang: en
     kind: report
+    session:
+      lat: 37.762
+      lon: -122.44
     expect:
       compose_ok: true
       symbol: intent
       event_code: 2
       action_code: 11
       band: 3
+    expect_map:
+      report_type: other
   - id: res_05
-    text: "Confirmed: medicine arrived at the lobby ✅"
+    text: Confirmed — medicine arrived at the lobby
     lang: en
     kind: report
+    session:
+      lat: 37.78
+      lon: -122.415
     expect:
       compose_ok: true
       symbol: verify
       resource_code: 52
       place_code: 23
+    expect_map:
+      report_type: other
   - id: res_06
     text: ¿Está abierto el refugio?
     lang: es
     kind: question
+    session:
+      lat: 37.775
+      lon: -122.422
     expect:
       compose_ok: true
       symbol: query
       place_code: 22
   - id: res_07
-    text: On offre de la nourriture à l'abri 🍞
+    text: On offre de la nourriture à l'abri ce soir
     lang: fr
     kind: report
+    session:
+      lat: 37.775
+      lon: -122.422
+      geotype: shelter
     expect:
       compose_ok: true
       symbol: report
       offer: offer
       resource_code: 54
       place_code: 22
+    expect_map:
+      report_type: other
   - id: res_08
-    text: 我们需要住宿 🏠
+    text: 我们需要住宿
     lang: zh-Hans
     kind: report
+    session:
+      lat: 37.777
+      lon: -122.43
     expect:
       compose_ok: true
       symbol: report
       offer: demand
       resource_code: 53
+    expect_map:
+      report_type: other

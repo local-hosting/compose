@@ -1,0 +1,113 @@
+version: 1
+corpus: everyday-reports
+expected_count: 6
+meta:
+  description: Family/neighbor reports with session geo + map gold (compose-first + lexicon)
+messages:
+  - id: evd_r01
+    text: Family chat — smoke is getting worse here and the power keeps flickering
+    lang: en
+    kind: report
+    session:
+      lat: 37.765
+      lon: -122.431
+    event_ref: E_WILDFIRE
+    band: 3
+    expect_map:
+      report_type: worse_here
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+    expected_place_id: P_DIS_08
+  - id: evd_r02
+    text: Meet us at Emergency shelter 1 if you're stuck — we have two seats
+    lang: en
+    kind: report
+    session:
+      lat: 37.7749
+      lon: -122.4194
+      geotype: shelter
+    event_ref: E_FLOOD
+    band: 2
+    expect_map:
+      compose_first: true
+      place_id: P_DIS_01
+      report_type: other
+    geo_rank1_id: P_DIS_09
+    geo_rank2_ids:
+      - P_DIS_09
+      - P_DIS_01
+    expected_place_id: P_DIS_09
+  - id: evd_r03
+    text: County app says Flood warning — water's creeping into the driveway
+    lang: en
+    kind: report
+    session:
+      lat: 37.758
+      lon: -122.445
+    event_ref: E_FLOOD
+    band: 3
+    expect_map:
+      compose_first: true
+      event_ref: E_FLOOD
+      report_type: other
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+    expected_place_id: P_DIS_08
+  - id: evd_r04
+    text: We're safe on the second floor for now, kids are calm
+    lang: en
+    kind: report
+    session:
+      lat: 37.788
+      lon: -122.41
+    event_ref: E_QUAKE
+    band: 2
+    expect_map:
+      report_type: im_safe
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+    expected_place_id: P_DIS_08
+  - id: evd_r05
+    text: Need help — can't reach Community hospital 2 with the road washed out
+    lang: en
+    kind: report
+    session:
+      lat: 37.769
+      lon: -122.408
+      geotype: hospital
+    event_ref: E_FLOOD
+    band: 4
+    expect_map:
+      compose_first: true
+      place_id: P_DIS_02
+      report_type: need_help
+    geo_rank1_id: P_DIS_10
+    geo_rank2_ids:
+      - P_DIS_10
+      - P_DIS_06
+    expected_place_id: P_DIS_10
+  - id: evd_r06
+    text: Heading to School pickup zone 3 to grab the cousins before curfew
+    lang: en
+    kind: report
+    session:
+      lat: 37.771
+      lon: -122.425
+      geotype: school
+    event_ref: E_FLOOD
+    band: 2
+    expect_map:
+      compose_first: true
+      place_id: P_DIS_03
+      report_type: other
+    geo_rank1_id: P_DIS_03
+    geo_rank2_ids:
+      - P_DIS_03
+      - P_DIS_07
+    expected_place_id: P_DIS_03

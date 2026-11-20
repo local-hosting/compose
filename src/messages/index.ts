@@ -1,6 +1,7 @@
 export type {
   ComposeExpect,
   ComposeIntentExpect,
+  ReportMapExpect,
   MessageCorpusDocument,
   MessageCorpusId,
   MessageKind,

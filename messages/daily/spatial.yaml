@@ -1,0 +1,179 @@
+version: 1
+corpus: everyday-spatial
+expected_count: 8
+meta:
+  description: Family/coordination questions with session geo + map gold (spatial-ai live eval)
+messages:
+  - id: evd_sp_01
+    text: Kids are still at school and smoke is getting worse — should we leave or wait?
+    lang: en
+    kind: question
+    expected_map_label: what_to_do
+    session:
+      lat: 37.7689
+      lon: -122.4294
+      geotype: school
+    event_ref: E_WILDFIRE
+    band: 3
+    geo_rank1_id: P_DIS_03
+    geo_rank2_ids:
+      - P_DIS_03
+      - P_DIS_07
+    expected_place_id: P_DIS_03
+    expect_compose:
+      acceptable_action_ids:
+        - - A_EVAC
+          - A_SHELTER
+          - A_HIGHER
+          - A_STAY
+  - id: evd_sp_02
+    text: Is it safe for the kids to wait outside the school entrance?
+    lang: en
+    kind: question
+    expected_map_label: is_it_safe_for_kids
+    session:
+      lat: 37.7712
+      lon: -122.4112
+      geotype: school
+    event_ref: E_FLOOD
+    band: 2
+    geo_rank1_id: P_DIS_03
+    geo_rank2_ids:
+      - P_DIS_03
+      - P_DIS_07
+    expected_place_id: P_DIS_03
+    expect_compose:
+      acceptable_action_ids:
+        - - A_STAY
+          - A_SHELTER
+      must_include_place_ids:
+        - P_DIS_03
+  - id: evd_sp_03
+    text: Can we go out to the store or should we stay in for now?
+    lang: en
+    kind: question
+    expected_map_label: is_it_safe_outside
+    session:
+      lat: 37.781
+      lon: -122.405
+    event_ref: E_FLOOD
+    band: 2
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+    expected_place_id: P_DIS_08
+    expect_compose:
+      acceptable_action_ids:
+        - - A_STAY
+          - A_EVAC
+          - A_HIGHER
+      must_include_place_ids:
+        - P_DIS_08
+  - id: evd_sp_04
+    text: How long will this air-quality alert last?
+    lang: en
+    kind: question
+    expected_map_label: how_long
+    session:
+      lat: 37.7595
+      lon: -122.437
+    event_ref: E_WILDFIRE
+    band: 2
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+    expected_place_id: P_DIS_08
+    expect_compose:
+      acceptable_action_ids:
+        - - A_STAY
+          - A_SHELTER
+  - id: evd_sp_05
+    text: Where's the nearest open shelter? We're stuck near downtown.
+    lang: en
+    kind: question
+    expected_map_label: where_to_go
+    session:
+      lat: 37.7749
+      lon: -122.4194
+      geotype: shelter
+    event_ref: E_FLOOD
+    band: 3
+    geo_rank1_id: P_DIS_09
+    geo_rank2_ids:
+      - P_DIS_09
+      - P_DIS_01
+    expected_place_id: P_DIS_09
+    expect_compose:
+      acceptable_action_ids:
+        - - A_HIGHER
+          - A_EVAC
+          - A_SHELTER
+      must_include_place_ids:
+        - P_DIS_09
+  - id: evd_sp_06
+    text: ¿Es seguro que los niños salgan de la escuela ahora?
+    lang: es
+    kind: question
+    expected_map_label: is_it_safe_for_kids
+    session:
+      lat: 37.7725
+      lon: -122.428
+      geotype: school
+    event_ref: E_QUAKE
+    band: 2
+    geo_rank1_id: P_DIS_03
+    geo_rank2_ids:
+      - P_DIS_03
+      - P_DIS_07
+    expected_place_id: P_DIS_03
+    expect_compose:
+      acceptable_action_ids:
+        - - A_STAY
+          - A_SHELTER
+      must_include_place_ids:
+        - P_DIS_03
+  - id: evd_sp_07
+    text: What should I do if the pharmacy line is an hour long?
+    lang: en
+    kind: question
+    expected_map_label: what_to_do
+    session:
+      lat: 37.786
+      lon: -122.418
+    event_ref: E_FLOOD
+    band: 2
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+    expected_place_id: P_DIS_08
+    expect_compose:
+      acceptable_action_ids:
+        - - A_EVAC
+          - A_SHELTER
+          - A_HIGHER
+          - A_STAY
+  - id: evd_sp_08
+    text: Where can I go if we have to leave the neighborhood tonight?
+    lang: en
+    kind: question
+    expected_map_label: where_to_go
+    session:
+      lat: 37.752
+      lon: -122.442
+      geotype: shelter
+    event_ref: E_WILDFIRE
+    band: 3
+    geo_rank1_id: P_DIS_09
+    geo_rank2_ids:
+      - P_DIS_09
+      - P_DIS_01
+    expected_place_id: P_DIS_09
+    expect_compose:
+      acceptable_action_ids:
+        - - A_EVAC
+          - A_SHELTER
+      must_include_place_ids:
+        - P_DIS_09

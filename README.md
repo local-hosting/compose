@@ -24,7 +24,7 @@ const result = composeWords(text, table, labels, 'es')
 
 | Path | Contents |
 |------|-----------|
-| `messages/everyday/corpus.yaml` | Family everyday (`composeWords` + `expect` goldens) |
+| `messages/daily/corpus.yaml` | Family everyday (`composeWords` + `expect` goldens) |
 | `messages/resilience/corpus.yaml` | Off-grid resilience (short set) |
 | `messages/resilience/resilience-synthetic.yaml` | 100 Ready.gov-style prompts (spatial token bench) |
 | `messages/resilience/resilience-crisislex.yaml` | 100 on-topic [CrisisLex T6](https://github.com/sajao/CrisisLex/tree/master/data) tweets |

@@ -2,59 +2,87 @@ version: 1
 corpus: everyday
 expected_count: 6
 meta:
-  description: Family everyday scenarios (composeWords + test fixtures)
+  description: Family everyday scenarios (composeWords; spatial bench in sibling YAML)
 messages:
   - id: evd_01
-    text: We need milk for breakfast 🥛
+    text: We're out of milk for tomorrow's breakfast
     lang: en
     kind: report
+    session:
+      lat: 37.784
+      lon: -122.448
     expect:
       compose_ok: true
       symbol: report
       offer: demand
       resource_code: 50
+    expect_map:
+      report_type: other
   - id: evd_02
-    text: I can offer a ride to school 🙂
+    text: I can offer a ride to school if you're running late
     lang: en
     kind: report
+    session:
+      lat: 37.776
+      lon: -122.435
+      geotype: school
     expect:
       compose_ok: true
       symbol: report
       offer: offer
       resource_code: 51
       place_code: 21
+    expect_map:
+      report_type: other
   - id: evd_03
     text: Are you home yet?
     lang: en
     kind: question
+    session:
+      lat: 37.781
+      lon: -122.452
     expect:
       compose_ok: true
       symbol: query
       place_code: 20
   - id: evd_04
-    text: "Dinner plan: pickup the kids from school"
+    text: "Dinner plan: pickup the kids from school around 3:15"
     lang: en
     kind: report
+    session:
+      lat: 37.772
+      lon: -122.418
+      geotype: school
     expect:
       compose_ok: true
       symbol: intent
       event_code: 1
       action_code: 10
       place_code: 21
+    expect_map:
+      report_type: other
   - id: evd_05
-    text: Can you confirm the medicine dose? ✅
+    text: Can you confirm the medicine dose before bedtime?
     lang: en
     kind: question
+    session:
+      lat: 37.789
+      lon: -122.441
     expect:
       compose_ok: true
       symbol: verify
       resource_code: 52
   - id: evd_06
-    text: Necesitamos leche para el desayuno 🥛
+    text: Nos quedamos sin leche para el desayuno
     lang: es
     kind: report
+    session:
+      lat: 37.784
+      lon: -122.448
     expect:
       compose_ok: true
       symbol: report
       offer: demand
       resource_code: 50
+    expect_map:
+      report_type: other

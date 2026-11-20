@@ -48,6 +48,7 @@
     "publish:package": "npm publish --registry=https://npm.pkg.github.com",
     "test:watch": "vitest",
     "messages:resilience:synthetic": "node scripts/generate-resilience-synthetic.mjs && node scripts/annotate-resilience-synthetic-geo.mjs",
+    "messages:everyday:geo": "yarn build && node --import tsx ../spatial-ai/scripts/annotate-corpus-geo.ts everyday-spatial && node --import tsx ../spatial-ai/scripts/annotate-corpus-geo.ts everyday-reports",
     "messages:resilience:crisislex": "node scripts/import-crisislex.mjs"
   },
   "dependencies": {
