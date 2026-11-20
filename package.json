@@ -2,10 +2,17 @@
   "name": "@local-hosting/compose",
   "packageManager": "yarn@4.18.1",
   "version": "0.1.0",
-  "private": true,
   "description": "Non-AI compose: lexicon/rules + languages → CompactFrame via @local-hosting/frames.",
   "type": "module",
   "license": "MPL-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/local-hosting/compose.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "restricted"
+  },
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -31,6 +38,8 @@
     "test": "vitest run",
     "pretest": "yarn build",
     "ci": "yarn validate && yarn build && yarn test",
+    "prepublishOnly": "yarn build",
+    "publish:package": "npm publish --registry=https://npm.pkg.github.com",
     "test:watch": "vitest"
   },
   "dependencies": {
