@@ -23,11 +23,17 @@
       "types": "./dist/thin/index.d.ts",
       "import": "./dist/thin/index.js",
       "default": "./dist/thin/index.js"
+    },
+    "./messages": {
+      "types": "./dist/messages/index.d.ts",
+      "import": "./dist/messages/index.js",
+      "default": "./dist/messages/index.js"
     }
   },
   "types": "./dist/index.d.ts",
   "files": [
     "dist",
+    "messages",
     "README.md"
   ],
   "scripts": {
@@ -40,11 +46,14 @@
     "ci": "yarn validate && yarn build && yarn test",
     "prepublishOnly": "yarn build",
     "publish:package": "npm publish --registry=https://npm.pkg.github.com",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "messages:resilience:synthetic": "node scripts/generate-resilience-synthetic.mjs && node scripts/annotate-resilience-synthetic-geo.mjs",
+    "messages:resilience:crisislex": "node scripts/import-crisislex.mjs"
   },
   "dependencies": {
     "@local-hosting/comms": "0.3.0",
-    "@local-hosting/frames": "0.1.0"
+    "@local-hosting/frames": "0.1.0",
+    "yaml": "^2.7.0"
   },
   "devDependencies": {
     "@types/node": "^22.13.10",

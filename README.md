@@ -20,7 +20,29 @@ const result = composeWords(text, table, labels, 'es')
 
 `ar`, `en`, `es`, `fr`, `he`, `hi`, `it`, `nl`, `pt`, `ta`, `zh-Hans`, `zh-Hant`
 
-## Example messages
+## Message corpora (YAML)
+
+| Path | Contents |
+|------|-----------|
+| `messages/everyday/corpus.yaml` | Family everyday (`composeWords` + `expect` goldens) |
+| `messages/resilience/corpus.yaml` | Off-grid resilience (short set) |
+| `messages/resilience/resilience-synthetic.yaml` | 100 Ready.gov-style prompts (spatial token bench) |
+| `messages/resilience/resilience-crisislex.yaml` | 100 on-topic [CrisisLex T6](https://github.com/sajao/CrisisLex/tree/master/data) tweets |
+
+```ts
+import { loadResilienceBenchMessages, readMessageCorpus } from '@local-hosting/compose/messages'
+```
+
+Regenerate:
+
+```bash
+yarn messages:resilience:synthetic
+yarn messages:resilience:crisislex   # needs network
+```
+
+Vitest: `test/message-corpora.test.ts`.
+
+## Example messages (inline)
 
 ### Everyday (family)
 
@@ -30,7 +52,7 @@ const result = composeWords(text, table, labels, 'es')
 - Dinner plan: pickup the kids from school → `intent`
 - Can you confirm the medicine dose? ✅ → `verify`
 
-### Resilience (off-grid / disaster)
+### Resilience (off-grid)
 
 - We need lodging for three families tonight 🏠 → `report` demand
 - Offering food at the shelter — come by if you can 🍞 → `report` offer

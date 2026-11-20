@@ -1,0 +1,1559 @@
+version: 1
+corpus: resilience-synthetic
+expected_count: 100
+meta:
+  description: Paraphrased Ready.gov-style prompts
+messages:
+  - id: msg_001
+    text: Where is the nearest shelter open right now?
+    lang: en
+    kind: question
+    expected_map_label: where_to_go
+    expected_place_id: P_DIS_09
+    session:
+      lat: 37.7749
+      lon: -122.4194
+      geotype: shelter
+    event_ref: E_FLOOD
+    band: 2
+    geo_rank1_id: P_DIS_09
+    geo_rank2_ids:
+      - P_DIS_09
+      - P_DIS_01
+    expect_compose:
+      acceptable_action_ids:
+        - - A_SHELTER
+          - A_EVAC
+          - A_HIGHER
+      must_include_place_ids:
+        - P_DIS_09
+  - id: msg_002
+    text: Lost power, smoke thick, anyone know hospital status?
+    lang: en
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.794900000000005
+      lon: -122.4294
+    event_ref: E_WILDFIRE
+    band: 3
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_003
+    text: Just felt another shake, ceiling cracked
+    lang: en
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.7599
+      lon: -122.4074
+    event_ref: E_QUAKE
+    band: 4
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_004
+    text: How long will this smoke last?
+    lang: en
+    kind: question
+    expected_map_label: how_long
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.8049
+      lon: -122.3994
+    event_ref: E_FLOOD
+    band: 2
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_005
+    text: Neighborhood flooded knee deep, can’t reach main road
+    lang: en
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.749900000000004
+      lon: -122.43939999999999
+    event_ref: E_WILDFIRE
+    band: 3
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_006
+    text: Air quality terrible, kids coughing
+    lang: en
+    kind: report
+    expected_place_id: P_DIS_09
+    session:
+      lat: 37.7849
+      lon: -122.3844
+      geotype: shelter
+    event_ref: E_QUAKE
+    band: 4
+    geo_rank1_id: P_DIS_09
+    geo_rank2_ids:
+      - P_DIS_09
+      - P_DIS_01
+  - id: msg_007
+    text: ¿Dónde hay refugio cerca?
+    lang: es
+    kind: question
+    expected_map_label: where_to_go
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.8149
+      lon: -122.4494
+    event_ref: E_FLOOD
+    band: 2
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+    expect_compose:
+      acceptable_action_ids:
+        - - A_SHELTER
+          - A_EVAC
+          - A_HIGHER
+      must_include_place_ids:
+        - P_DIS_08
+  - id: msg_008
+    text: River overcame the levee downstream
+    lang: en
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.7349
+      lon: -122.39439999999999
+    event_ref: E_WILDFIRE
+    band: 3
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_009
+    text: Trees down, roads blocked near the clinic
+    lang: en
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.7749
+      lon: -122.4194
+    event_ref: E_QUAKE
+    band: 4
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_010
+    text: C'est safe dehors pour les enfants?
+    lang: fr
+    kind: question
+    expected_map_label: is_it_safe_for_kids
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.794900000000005
+      lon: -122.4294
+    event_ref: E_FLOOD
+    band: 2
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_011
+    text: Agua subiendo rápido — necesitamos refugio
+    lang: es
+    kind: report
+    expected_place_id: P_DIS_09
+    session:
+      lat: 37.7599
+      lon: -122.4074
+      geotype: shelter
+    event_ref: E_WILDFIRE
+    band: 3
+    geo_rank1_id: P_DIS_09
+    geo_rank2_ids:
+      - P_DIS_09
+      - P_DIS_01
+  - id: msg_012
+    text: Humo horrible, ¿hay centro de evacuación?
+    lang: es
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.8049
+      lon: -122.3994
+    event_ref: E_QUAKE
+    band: 4
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_013
+    text: flash flood warning — should we leave?
+    lang: en
+    kind: question
+    expected_map_label: what_to_do
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.749900000000004
+      lon: -122.43939999999999
+    event_ref: E_FLOOD
+    band: 2
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_014
+    text: Inondation rue principale impossible sortir
+    lang: fr
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.7849
+      lon: -122.3844
+    event_ref: E_WILDFIRE
+    band: 3
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_015
+    text: Fumée incendie — où aller?
+    lang: fr
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.8149
+      lon: -122.4494
+    event_ref: E_QUAKE
+    band: 4
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_016
+    text: Can I drive through the water on 3rd?
+    lang: en
+    kind: question
+    expected_map_label: is_it_safe_outside
+    expected_place_id: P_DIS_09
+    session:
+      lat: 37.7349
+      lon: -122.39439999999999
+      geotype: shelter
+    event_ref: E_FLOOD
+    band: 2
+    geo_rank1_id: P_DIS_09
+    geo_rank2_ids:
+      - P_DIS_09
+      - P_DIS_01
+  - id: msg_017
+    text: Lost power, smoke thick, anyone know hospital status?
+    lang: en
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.7749
+      lon: -122.4194
+    event_ref: E_WILDFIRE
+    band: 3
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_018
+    text: Just felt another shake, ceiling cracked
+    lang: en
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.794900000000005
+      lon: -122.4294
+    event_ref: E_QUAKE
+    band: 4
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_019
+    text: Où est le refuge le plus proche?
+    lang: fr
+    kind: question
+    expected_map_label: where_to_go
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.7599
+      lon: -122.4074
+    event_ref: E_FLOOD
+    band: 2
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+    expect_compose:
+      acceptable_action_ids:
+        - - A_SHELTER
+          - A_EVAC
+          - A_HIGHER
+      must_include_place_ids:
+        - P_DIS_08
+  - id: msg_020
+    text: Neighborhood flooded knee deep, can’t reach main road
+    lang: en
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.8049
+      lon: -122.3994
+    event_ref: E_WILDFIRE
+    band: 3
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_021
+    text: Air quality terrible, kids coughing
+    lang: en
+    kind: report
+    expected_place_id: P_DIS_09
+    session:
+      lat: 37.749900000000004
+      lon: -122.43939999999999
+      geotype: shelter
+    event_ref: E_QUAKE
+    band: 4
+    geo_rank1_id: P_DIS_09
+    geo_rank2_ids:
+      - P_DIS_09
+      - P_DIS_01
+  - id: msg_022
+    text: Any open evacuation center near me?
+    lang: en
+    kind: question
+    expected_map_label: where_to_go
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.7849
+      lon: -122.3844
+    event_ref: E_FLOOD
+    band: 2
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+    expect_compose:
+      acceptable_action_ids:
+        - - A_SHELTER
+          - A_EVAC
+          - A_HIGHER
+      must_include_place_ids:
+        - P_DIS_08
+  - id: msg_023
+    text: River overcame the levee downstream
+    lang: en
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.8149
+      lon: -122.4494
+    event_ref: E_WILDFIRE
+    band: 3
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_024
+    text: Trees down, roads blocked near the clinic
+    lang: en
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.7349
+      lon: -122.39439999999999
+    event_ref: E_QUAKE
+    band: 4
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_025
+    text: Is it safe for kids outside?
+    lang: en
+    kind: question
+    expected_map_label: is_it_safe_for_kids
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.7749
+      lon: -122.4194
+    event_ref: E_FLOOD
+    band: 2
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_026
+    text: Agua subiendo rápido — necesitamos refugio
+    lang: es
+    kind: report
+    expected_place_id: P_DIS_09
+    session:
+      lat: 37.794900000000005
+      lon: -122.4294
+      geotype: shelter
+    event_ref: E_WILDFIRE
+    band: 3
+    geo_rank1_id: P_DIS_09
+    geo_rank2_ids:
+      - P_DIS_09
+      - P_DIS_01
+  - id: msg_027
+    text: Humo horrible, ¿hay centro de evacuación?
+    lang: es
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.7599
+      lon: -122.4074
+    event_ref: E_QUAKE
+    band: 4
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_028
+    text: ¿Cuánto durará la alerta?
+    lang: es
+    kind: question
+    expected_map_label: how_long
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.8049
+      lon: -122.3994
+    event_ref: E_FLOOD
+    band: 2
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_029
+    text: Inondation rue principale impossible sortir
+    lang: fr
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.749900000000004
+      lon: -122.43939999999999
+    event_ref: E_WILDFIRE
+    band: 3
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_030
+    text: Fumée incendie — où aller?
+    lang: fr
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.7849
+      lon: -122.3844
+    event_ref: E_QUAKE
+    band: 4
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_031
+    text: Where is the nearest shelter open right now?
+    lang: en
+    kind: question
+    expected_map_label: where_to_go
+    expected_place_id: P_DIS_09
+    session:
+      lat: 37.8149
+      lon: -122.4494
+      geotype: shelter
+    event_ref: E_FLOOD
+    band: 2
+    geo_rank1_id: P_DIS_09
+    geo_rank2_ids:
+      - P_DIS_09
+      - P_DIS_01
+    expect_compose:
+      acceptable_action_ids:
+        - - A_SHELTER
+          - A_EVAC
+          - A_HIGHER
+      must_include_place_ids:
+        - P_DIS_09
+  - id: msg_032
+    text: Lost power, smoke thick, anyone know hospital status?
+    lang: en
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.7349
+      lon: -122.39439999999999
+    event_ref: E_WILDFIRE
+    band: 3
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_033
+    text: Just felt another shake, ceiling cracked
+    lang: en
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.7749
+      lon: -122.4194
+    event_ref: E_QUAKE
+    band: 4
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_034
+    text: How long will this smoke last?
+    lang: en
+    kind: question
+    expected_map_label: how_long
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.794900000000005
+      lon: -122.4294
+    event_ref: E_FLOOD
+    band: 2
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_035
+    text: Neighborhood flooded knee deep, can’t reach main road
+    lang: en
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.7599
+      lon: -122.4074
+    event_ref: E_WILDFIRE
+    band: 3
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_036
+    text: Air quality terrible, kids coughing
+    lang: en
+    kind: report
+    expected_place_id: P_DIS_09
+    session:
+      lat: 37.8049
+      lon: -122.3994
+      geotype: shelter
+    event_ref: E_QUAKE
+    band: 4
+    geo_rank1_id: P_DIS_09
+    geo_rank2_ids:
+      - P_DIS_09
+      - P_DIS_01
+  - id: msg_037
+    text: ¿Dónde hay refugio cerca?
+    lang: es
+    kind: question
+    expected_map_label: where_to_go
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.749900000000004
+      lon: -122.43939999999999
+    event_ref: E_FLOOD
+    band: 2
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+    expect_compose:
+      acceptable_action_ids:
+        - - A_SHELTER
+          - A_EVAC
+          - A_HIGHER
+      must_include_place_ids:
+        - P_DIS_08
+  - id: msg_038
+    text: River overcame the levee downstream
+    lang: en
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.7849
+      lon: -122.3844
+    event_ref: E_WILDFIRE
+    band: 3
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_039
+    text: Trees down, roads blocked near the clinic
+    lang: en
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.8149
+      lon: -122.4494
+    event_ref: E_QUAKE
+    band: 4
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_040
+    text: C'est safe dehors pour les enfants?
+    lang: fr
+    kind: question
+    expected_map_label: is_it_safe_for_kids
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.7349
+      lon: -122.39439999999999
+    event_ref: E_FLOOD
+    band: 2
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_041
+    text: Agua subiendo rápido — necesitamos refugio
+    lang: es
+    kind: report
+    expected_place_id: P_DIS_09
+    session:
+      lat: 37.7749
+      lon: -122.4194
+      geotype: shelter
+    event_ref: E_WILDFIRE
+    band: 3
+    geo_rank1_id: P_DIS_09
+    geo_rank2_ids:
+      - P_DIS_09
+      - P_DIS_01
+  - id: msg_042
+    text: Humo horrible, ¿hay centro de evacuación?
+    lang: es
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.794900000000005
+      lon: -122.4294
+    event_ref: E_QUAKE
+    band: 4
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_043
+    text: flash flood warning — should we leave?
+    lang: en
+    kind: question
+    expected_map_label: what_to_do
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.7599
+      lon: -122.4074
+    event_ref: E_FLOOD
+    band: 2
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_044
+    text: Inondation rue principale impossible sortir
+    lang: fr
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.8049
+      lon: -122.3994
+    event_ref: E_WILDFIRE
+    band: 3
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_045
+    text: Fumée incendie — où aller?
+    lang: fr
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.749900000000004
+      lon: -122.43939999999999
+    event_ref: E_QUAKE
+    band: 4
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_046
+    text: Can I drive through the water on 3rd?
+    lang: en
+    kind: question
+    expected_map_label: is_it_safe_outside
+    expected_place_id: P_DIS_09
+    session:
+      lat: 37.7849
+      lon: -122.3844
+      geotype: shelter
+    event_ref: E_FLOOD
+    band: 2
+    geo_rank1_id: P_DIS_09
+    geo_rank2_ids:
+      - P_DIS_09
+      - P_DIS_01
+  - id: msg_047
+    text: Lost power, smoke thick, anyone know hospital status?
+    lang: en
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.8149
+      lon: -122.4494
+    event_ref: E_WILDFIRE
+    band: 3
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_048
+    text: Just felt another shake, ceiling cracked
+    lang: en
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.7349
+      lon: -122.39439999999999
+    event_ref: E_QUAKE
+    band: 4
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_049
+    text: Où est le refuge le plus proche?
+    lang: fr
+    kind: question
+    expected_map_label: where_to_go
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.7749
+      lon: -122.4194
+    event_ref: E_FLOOD
+    band: 2
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+    expect_compose:
+      acceptable_action_ids:
+        - - A_SHELTER
+          - A_EVAC
+          - A_HIGHER
+      must_include_place_ids:
+        - P_DIS_08
+  - id: msg_050
+    text: Neighborhood flooded knee deep, can’t reach main road
+    lang: en
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.794900000000005
+      lon: -122.4294
+    event_ref: E_WILDFIRE
+    band: 3
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_051
+    text: Air quality terrible, kids coughing
+    lang: en
+    kind: report
+    expected_place_id: P_DIS_09
+    session:
+      lat: 37.7599
+      lon: -122.4074
+      geotype: shelter
+    event_ref: E_QUAKE
+    band: 4
+    geo_rank1_id: P_DIS_09
+    geo_rank2_ids:
+      - P_DIS_09
+      - P_DIS_01
+  - id: msg_052
+    text: Any open evacuation center near me?
+    lang: en
+    kind: question
+    expected_map_label: where_to_go
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.8049
+      lon: -122.3994
+    event_ref: E_FLOOD
+    band: 2
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+    expect_compose:
+      acceptable_action_ids:
+        - - A_SHELTER
+          - A_EVAC
+          - A_HIGHER
+      must_include_place_ids:
+        - P_DIS_08
+  - id: msg_053
+    text: River overcame the levee downstream
+    lang: en
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.749900000000004
+      lon: -122.43939999999999
+    event_ref: E_WILDFIRE
+    band: 3
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_054
+    text: Trees down, roads blocked near the clinic
+    lang: en
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.7849
+      lon: -122.3844
+    event_ref: E_QUAKE
+    band: 4
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_055
+    text: Is it safe for kids outside?
+    lang: en
+    kind: question
+    expected_map_label: is_it_safe_for_kids
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.8149
+      lon: -122.4494
+    event_ref: E_FLOOD
+    band: 2
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_056
+    text: Agua subiendo rápido — necesitamos refugio
+    lang: es
+    kind: report
+    expected_place_id: P_DIS_09
+    session:
+      lat: 37.7349
+      lon: -122.39439999999999
+      geotype: shelter
+    event_ref: E_WILDFIRE
+    band: 3
+    geo_rank1_id: P_DIS_09
+    geo_rank2_ids:
+      - P_DIS_09
+      - P_DIS_01
+  - id: msg_057
+    text: Humo horrible, ¿hay centro de evacuación?
+    lang: es
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.7749
+      lon: -122.4194
+    event_ref: E_QUAKE
+    band: 4
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_058
+    text: ¿Cuánto durará la alerta?
+    lang: es
+    kind: question
+    expected_map_label: how_long
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.794900000000005
+      lon: -122.4294
+    event_ref: E_FLOOD
+    band: 2
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_059
+    text: Inondation rue principale impossible sortir
+    lang: fr
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.7599
+      lon: -122.4074
+    event_ref: E_WILDFIRE
+    band: 3
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_060
+    text: Fumée incendie — où aller?
+    lang: fr
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.8049
+      lon: -122.3994
+    event_ref: E_QUAKE
+    band: 4
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_061
+    text: Where is the nearest shelter open right now?
+    lang: en
+    kind: question
+    expected_map_label: where_to_go
+    expected_place_id: P_DIS_09
+    session:
+      lat: 37.749900000000004
+      lon: -122.43939999999999
+      geotype: shelter
+    event_ref: E_FLOOD
+    band: 2
+    geo_rank1_id: P_DIS_09
+    geo_rank2_ids:
+      - P_DIS_09
+      - P_DIS_01
+    expect_compose:
+      acceptable_action_ids:
+        - - A_SHELTER
+          - A_EVAC
+          - A_HIGHER
+      must_include_place_ids:
+        - P_DIS_09
+  - id: msg_062
+    text: Lost power, smoke thick, anyone know hospital status?
+    lang: en
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.7849
+      lon: -122.3844
+    event_ref: E_WILDFIRE
+    band: 3
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_063
+    text: Just felt another shake, ceiling cracked
+    lang: en
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.8149
+      lon: -122.4494
+    event_ref: E_QUAKE
+    band: 4
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_064
+    text: How long will this smoke last?
+    lang: en
+    kind: question
+    expected_map_label: how_long
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.7349
+      lon: -122.39439999999999
+    event_ref: E_FLOOD
+    band: 2
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_065
+    text: Neighborhood flooded knee deep, can’t reach main road
+    lang: en
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.7749
+      lon: -122.4194
+    event_ref: E_WILDFIRE
+    band: 3
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_066
+    text: Air quality terrible, kids coughing
+    lang: en
+    kind: report
+    expected_place_id: P_DIS_09
+    session:
+      lat: 37.794900000000005
+      lon: -122.4294
+      geotype: shelter
+    event_ref: E_QUAKE
+    band: 4
+    geo_rank1_id: P_DIS_09
+    geo_rank2_ids:
+      - P_DIS_09
+      - P_DIS_01
+  - id: msg_067
+    text: ¿Dónde hay refugio cerca?
+    lang: es
+    kind: question
+    expected_map_label: where_to_go
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.7599
+      lon: -122.4074
+    event_ref: E_FLOOD
+    band: 2
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+    expect_compose:
+      acceptable_action_ids:
+        - - A_SHELTER
+          - A_EVAC
+          - A_HIGHER
+      must_include_place_ids:
+        - P_DIS_08
+  - id: msg_068
+    text: River overcame the levee downstream
+    lang: en
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.8049
+      lon: -122.3994
+    event_ref: E_WILDFIRE
+    band: 3
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_069
+    text: Trees down, roads blocked near the clinic
+    lang: en
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.749900000000004
+      lon: -122.43939999999999
+    event_ref: E_QUAKE
+    band: 4
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_070
+    text: C'est safe dehors pour les enfants?
+    lang: fr
+    kind: question
+    expected_map_label: is_it_safe_for_kids
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.7849
+      lon: -122.3844
+    event_ref: E_FLOOD
+    band: 2
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_071
+    text: Agua subiendo rápido — necesitamos refugio
+    lang: es
+    kind: report
+    expected_place_id: P_DIS_09
+    session:
+      lat: 37.8149
+      lon: -122.4494
+      geotype: shelter
+    event_ref: E_WILDFIRE
+    band: 3
+    geo_rank1_id: P_DIS_09
+    geo_rank2_ids:
+      - P_DIS_09
+      - P_DIS_01
+  - id: msg_072
+    text: Humo horrible, ¿hay centro de evacuación?
+    lang: es
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.7349
+      lon: -122.39439999999999
+    event_ref: E_QUAKE
+    band: 4
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_073
+    text: flash flood warning — should we leave?
+    lang: en
+    kind: question
+    expected_map_label: what_to_do
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.7749
+      lon: -122.4194
+    event_ref: E_FLOOD
+    band: 2
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_074
+    text: Inondation rue principale impossible sortir
+    lang: fr
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.794900000000005
+      lon: -122.4294
+    event_ref: E_WILDFIRE
+    band: 3
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_075
+    text: Fumée incendie — où aller?
+    lang: fr
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.7599
+      lon: -122.4074
+    event_ref: E_QUAKE
+    band: 4
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_076
+    text: Can I drive through the water on 3rd?
+    lang: en
+    kind: question
+    expected_map_label: is_it_safe_outside
+    expected_place_id: P_DIS_09
+    session:
+      lat: 37.8049
+      lon: -122.3994
+      geotype: shelter
+    event_ref: E_FLOOD
+    band: 2
+    geo_rank1_id: P_DIS_09
+    geo_rank2_ids:
+      - P_DIS_09
+      - P_DIS_01
+  - id: msg_077
+    text: Lost power, smoke thick, anyone know hospital status?
+    lang: en
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.749900000000004
+      lon: -122.43939999999999
+    event_ref: E_WILDFIRE
+    band: 3
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_078
+    text: Just felt another shake, ceiling cracked
+    lang: en
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.7849
+      lon: -122.3844
+    event_ref: E_QUAKE
+    band: 4
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_079
+    text: Où est le refuge le plus proche?
+    lang: fr
+    kind: question
+    expected_map_label: where_to_go
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.8149
+      lon: -122.4494
+    event_ref: E_FLOOD
+    band: 2
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+    expect_compose:
+      acceptable_action_ids:
+        - - A_SHELTER
+          - A_EVAC
+          - A_HIGHER
+      must_include_place_ids:
+        - P_DIS_08
+  - id: msg_080
+    text: Neighborhood flooded knee deep, can’t reach main road
+    lang: en
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.7349
+      lon: -122.39439999999999
+    event_ref: E_WILDFIRE
+    band: 3
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_081
+    text: Air quality terrible, kids coughing
+    lang: en
+    kind: report
+    expected_place_id: P_DIS_09
+    session:
+      lat: 37.7749
+      lon: -122.4194
+      geotype: shelter
+    event_ref: E_QUAKE
+    band: 4
+    geo_rank1_id: P_DIS_09
+    geo_rank2_ids:
+      - P_DIS_09
+      - P_DIS_01
+  - id: msg_082
+    text: Any open evacuation center near me?
+    lang: en
+    kind: question
+    expected_map_label: where_to_go
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.794900000000005
+      lon: -122.4294
+    event_ref: E_FLOOD
+    band: 2
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+    expect_compose:
+      acceptable_action_ids:
+        - - A_SHELTER
+          - A_EVAC
+          - A_HIGHER
+      must_include_place_ids:
+        - P_DIS_08
+  - id: msg_083
+    text: River overcame the levee downstream
+    lang: en
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.7599
+      lon: -122.4074
+    event_ref: E_WILDFIRE
+    band: 3
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_084
+    text: Trees down, roads blocked near the clinic
+    lang: en
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.8049
+      lon: -122.3994
+    event_ref: E_QUAKE
+    band: 4
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_085
+    text: Is it safe for kids outside?
+    lang: en
+    kind: question
+    expected_map_label: is_it_safe_for_kids
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.749900000000004
+      lon: -122.43939999999999
+    event_ref: E_FLOOD
+    band: 2
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_086
+    text: Agua subiendo rápido — necesitamos refugio
+    lang: es
+    kind: report
+    expected_place_id: P_DIS_09
+    session:
+      lat: 37.7849
+      lon: -122.3844
+      geotype: shelter
+    event_ref: E_WILDFIRE
+    band: 3
+    geo_rank1_id: P_DIS_09
+    geo_rank2_ids:
+      - P_DIS_09
+      - P_DIS_01
+  - id: msg_087
+    text: Humo horrible, ¿hay centro de evacuación?
+    lang: es
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.8149
+      lon: -122.4494
+    event_ref: E_QUAKE
+    band: 4
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_088
+    text: ¿Cuánto durará la alerta?
+    lang: es
+    kind: question
+    expected_map_label: how_long
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.7349
+      lon: -122.39439999999999
+    event_ref: E_FLOOD
+    band: 2
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_089
+    text: Inondation rue principale impossible sortir
+    lang: fr
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.7749
+      lon: -122.4194
+    event_ref: E_WILDFIRE
+    band: 3
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_090
+    text: Fumée incendie — où aller?
+    lang: fr
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.794900000000005
+      lon: -122.4294
+    event_ref: E_QUAKE
+    band: 4
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_091
+    text: Where is the nearest shelter open right now?
+    lang: en
+    kind: question
+    expected_map_label: where_to_go
+    expected_place_id: P_DIS_09
+    session:
+      lat: 37.7599
+      lon: -122.4074
+      geotype: shelter
+    event_ref: E_FLOOD
+    band: 2
+    geo_rank1_id: P_DIS_09
+    geo_rank2_ids:
+      - P_DIS_09
+      - P_DIS_01
+    expect_compose:
+      acceptable_action_ids:
+        - - A_SHELTER
+          - A_EVAC
+          - A_HIGHER
+      must_include_place_ids:
+        - P_DIS_09
+  - id: msg_092
+    text: Lost power, smoke thick, anyone know hospital status?
+    lang: en
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.8049
+      lon: -122.3994
+    event_ref: E_WILDFIRE
+    band: 3
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_093
+    text: Just felt another shake, ceiling cracked
+    lang: en
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.749900000000004
+      lon: -122.43939999999999
+    event_ref: E_QUAKE
+    band: 4
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_094
+    text: How long will this smoke last?
+    lang: en
+    kind: question
+    expected_map_label: how_long
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.7849
+      lon: -122.3844
+    event_ref: E_FLOOD
+    band: 2
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_095
+    text: Neighborhood flooded knee deep, can’t reach main road
+    lang: en
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.8149
+      lon: -122.4494
+    event_ref: E_WILDFIRE
+    band: 3
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_096
+    text: Air quality terrible, kids coughing
+    lang: en
+    kind: report
+    expected_place_id: P_DIS_09
+    session:
+      lat: 37.7349
+      lon: -122.39439999999999
+      geotype: shelter
+    event_ref: E_QUAKE
+    band: 4
+    geo_rank1_id: P_DIS_09
+    geo_rank2_ids:
+      - P_DIS_09
+      - P_DIS_01
+  - id: msg_097
+    text: ¿Dónde hay refugio cerca?
+    lang: es
+    kind: question
+    expected_map_label: where_to_go
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.7749
+      lon: -122.4194
+    event_ref: E_FLOOD
+    band: 2
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+    expect_compose:
+      acceptable_action_ids:
+        - - A_SHELTER
+          - A_EVAC
+          - A_HIGHER
+      must_include_place_ids:
+        - P_DIS_08
+  - id: msg_098
+    text: River overcame the levee downstream
+    lang: en
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.794900000000005
+      lon: -122.4294
+    event_ref: E_WILDFIRE
+    band: 3
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_099
+    text: Trees down, roads blocked near the clinic
+    lang: en
+    kind: report
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.7599
+      lon: -122.4074
+    event_ref: E_QUAKE
+    band: 4
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+  - id: msg_100
+    text: C'est safe dehors pour les enfants?
+    lang: fr
+    kind: question
+    expected_map_label: is_it_safe_for_kids
+    expected_place_id: P_DIS_08
+    session:
+      lat: 37.8049
+      lon: -122.3994
+    event_ref: E_FLOOD
+    band: 2
+    geo_rank1_id: P_DIS_08
+    geo_rank2_ids:
+      - P_DIS_08
+      - P_DIS_10
+

@@ -1,0 +1,60 @@
+version: 1
+corpus: everyday
+expected_count: 6
+meta:
+  description: Family everyday scenarios (composeWords + test fixtures)
+messages:
+  - id: evd_01
+    text: We need milk for breakfast 🥛
+    lang: en
+    kind: report
+    expect:
+      compose_ok: true
+      symbol: report
+      offer: demand
+      resource_code: 50
+  - id: evd_02
+    text: I can offer a ride to school 🙂
+    lang: en
+    kind: report
+    expect:
+      compose_ok: true
+      symbol: report
+      offer: offer
+      resource_code: 51
+      place_code: 21
+  - id: evd_03
+    text: Are you home yet?
+    lang: en
+    kind: question
+    expect:
+      compose_ok: true
+      symbol: query
+      place_code: 20
+  - id: evd_04
+    text: "Dinner plan: pickup the kids from school"
+    lang: en
+    kind: report
+    expect:
+      compose_ok: true
+      symbol: intent
+      event_code: 1
+      action_code: 10
+      place_code: 21
+  - id: evd_05
+    text: Can you confirm the medicine dose? ✅
+    lang: en
+    kind: question
+    expect:
+      compose_ok: true
+      symbol: verify
+      resource_code: 52
+  - id: evd_06
+    text: Necesitamos leche para el desayuno 🥛
+    lang: es
+    kind: report
+    expect:
+      compose_ok: true
+      symbol: report
+      offer: demand
+      resource_code: 50
