@@ -6,7 +6,7 @@ export type MessageCorpusId =
   | 'everyday-spatial'
   | 'resilience'
   | 'resilience-synthetic'
-  | 'resilience-crisislex'
+  | 'resilience-social'
 
 /** Optional composeWords expectations (uses test/fixtures table). */
 export type ComposeExpect = {
@@ -68,10 +68,10 @@ export type MessageRow = {
   /** Top-two ids for partial-credit scoring. */
   geo_rank2_ids?: string[]
   expect_compose?: ComposeIntentExpect
-  crisislex?: {
-    corpus: string
-    crisis: string
-    tweet_id: string
+  provenance?: {
+    dataset: string
+    event: string
+    external_id: string
     attribution?: string
   }
 }

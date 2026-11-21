@@ -1,8 +1,8 @@
 version: 1
-corpus: resilience-crisislex
+corpus: resilience-social
 expected_count: 100
 meta:
-  description: CrisisLex T6 on-topic tweets
+  description: On-topic social posts (2012–2013 crisis events)
   upstream: https://github.com/sajao/CrisisLex/tree/master/data
 messages:
   - id: clx_001
@@ -16,10 +16,10 @@ messages:
       geotype: shelter
     event_ref: E_FLOOD
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2012_Sandy_Hurricane
-      tweet_id: "262343253549015040"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2012_Sandy_Hurricane
+      external_id: "262343253549015040"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_002
     text: "RT @usNWSgov: Over 10 inches of rain could fall in some areas as #Hurricane Sandy moves into the Mid-Atlantic coast on Monday. http://t. ..."
@@ -31,10 +31,10 @@ messages:
       lon: -122.4294
     event_ref: E_FLOOD
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2012_Sandy_Hurricane
-      tweet_id: "262343804483407872"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2012_Sandy_Hurricane
+      external_id: "262343804483407872"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_003
     text: "RT @questlove: Ready for #Frankenstorm. However if I had Monopoly/Cranium/& 4 sets of Uno Cards (Pilesies only) I'd be strizaight wa ..."
@@ -46,10 +46,10 @@ messages:
       lon: -122.4074
     event_ref: E_FLOOD
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2012_Sandy_Hurricane
-      tweet_id: "262344327194370048"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2012_Sandy_Hurricane
+      external_id: "262344327194370048"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_004
     text: Jill Biden has canceled Sunday campaign appearances in Huntersville and Asheville so law enforcement agencies can focus on Hurricane Sandy.
@@ -61,10 +61,10 @@ messages:
       lon: -122.3994
     event_ref: E_FLOOD
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2012_Sandy_Hurricane
-      tweet_id: "262345003693666304"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2012_Sandy_Hurricane
+      external_id: "262345003693666304"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_005
     text: Doing what folks do before a big storm... (@ Key Food) http://t.co/iK8em7tz
@@ -76,10 +76,10 @@ messages:
       lon: -122.43939999999999
     event_ref: E_FLOOD
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2012_Sandy_Hurricane
-      tweet_id: "262345146039926785"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2012_Sandy_Hurricane
+      external_id: "262345146039926785"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_006
     text: "hurricane sandy is just giving me a justifiable excuse to wear my coach rain boots out #spoiled"
@@ -91,10 +91,10 @@ messages:
       lon: -122.3844
     event_ref: E_FLOOD
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2012_Sandy_Hurricane
-      tweet_id: "262345698694029312"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2012_Sandy_Hurricane
+      external_id: "262345698694029312"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_007
     text: "RT @houstonhamil10: Since there is a hurricane. We shouldn't have school all next week."
@@ -106,10 +106,10 @@ messages:
       lon: -122.4494
     event_ref: E_FLOOD
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2012_Sandy_Hurricane
-      tweet_id: "262346107357630464"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2012_Sandy_Hurricane
+      external_id: "262346107357630464"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_008
     text: Urgent Warnings as Hurricane Sandy Strengthens and Heads to Northeast http://t.co/WD85JWT1
@@ -122,10 +122,10 @@ messages:
       geotype: shelter
     event_ref: E_FLOOD
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2012_Sandy_Hurricane
-      tweet_id: "262346226526191616"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2012_Sandy_Hurricane
+      external_id: "262346226526191616"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_009
     text: "?? RT @AHurricaneSandy: HURRICANE SANDY AIN'T EVEN A SCARY NAME THO. I NEED A TERRIFYING NAME LIKE HURRICANE SHANAYNAY OR SUM SHIT."
@@ -137,10 +137,10 @@ messages:
       lon: -122.4194
     event_ref: E_FLOOD
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2012_Sandy_Hurricane
-      tweet_id: "262346519603212288"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2012_Sandy_Hurricane
+      external_id: "262346519603212288"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_010
     text: that hurricane looks a bit lairy..
@@ -152,10 +152,10 @@ messages:
       lon: -122.4294
     event_ref: E_FLOOD
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2012_Sandy_Hurricane
-      tweet_id: "262347490706210816"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2012_Sandy_Hurricane
+      external_id: "262347490706210816"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_011
     text: I think I live under a rock considering I didn't know till right now that a hurricane is coming..
@@ -167,10 +167,10 @@ messages:
       lon: -122.4074
     event_ref: E_FLOOD
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2012_Sandy_Hurricane
-      tweet_id: "262347674202808320"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2012_Sandy_Hurricane
+      external_id: "262347674202808320"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_012
     text: "RT @iCanASHureYou: Idky but im not worried about this hurricane at all ."
@@ -182,10 +182,10 @@ messages:
       lon: -122.3994
     event_ref: E_FLOOD
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2012_Sandy_Hurricane
-      tweet_id: "262347789504229377"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2012_Sandy_Hurricane
+      external_id: "262347789504229377"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_013
     text: "RT @wunderground: #Sandy tied for 2nd largest tropical cyclone since 1988, by @WunderAngela http://t.co/qG9wcjaD  #hurricane"
@@ -197,10 +197,10 @@ messages:
       lon: -122.43939999999999
     event_ref: E_FLOOD
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2012_Sandy_Hurricane
-      tweet_id: "262347909524246528"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2012_Sandy_Hurricane
+      external_id: "262347909524246528"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_014
     text: "RT @coltford: Y'all say a Prayer for everyone in the path of this Hurricane Sandy. God Bless y'all stay Safe"
@@ -212,10 +212,10 @@ messages:
       lon: -122.3844
     event_ref: E_FLOOD
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2012_Sandy_Hurricane
-      tweet_id: "262348421376114688"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2012_Sandy_Hurricane
+      external_id: "262348421376114688"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_015
     text: "Let the Hurricane Party begin #Sandy #Frankenstorm (@ Ab Lib Lounge at the Double Tree Hotel) http://t.co/vAKSX2iz"
@@ -228,10 +228,10 @@ messages:
       geotype: shelter
     event_ref: E_FLOOD
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2012_Sandy_Hurricane
-      tweet_id: "262349104317861890"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2012_Sandy_Hurricane
+      external_id: "262349104317861890"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_016
     text: "Massive Hurricane Sandy takes aim at East Coast: HATTERAS ISLAND, North Carolina (Reuters) - Hurricane Sandy clo... http://t.co/yEpk8smq"
@@ -243,10 +243,10 @@ messages:
       lon: -122.39439999999999
     event_ref: E_FLOOD
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2012_Sandy_Hurricane
-      tweet_id: "262349172802482176"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2012_Sandy_Hurricane
+      external_id: "262349172802482176"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_017
     text: "@JiillBiill I'm getting hit by a hurricane on Monday!!!"
@@ -258,10 +258,10 @@ messages:
       lon: -122.4194
     event_ref: E_FLOOD
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2012_Sandy_Hurricane
-      tweet_id: "262349266725507072"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2012_Sandy_Hurricane
+      external_id: "262349266725507072"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_018
     text: "RT @bobbylight4real: He already started drinking the juice lmaooooooooo RT @TheOnlyReed: Hurricane sandy survival kit http://t.co/dMfnjN5V"
@@ -273,10 +273,10 @@ messages:
       lon: -122.4294
     event_ref: E_FLOOD
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2012_Sandy_Hurricane
-      tweet_id: "262349789017034752"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2012_Sandy_Hurricane
+      external_id: "262349789017034752"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_019
     text: "RT @anthonykidd91: I ain't got time for hurricane sandy"
@@ -288,10 +288,10 @@ messages:
       lon: -122.4074
     event_ref: E_FLOOD
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2012_Sandy_Hurricane
-      tweet_id: "262350161840324608"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2012_Sandy_Hurricane
+      external_id: "262350161840324608"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_020
     text: I can't tell if people don't know th difference between a hurricane and a zombie apocalypse.
@@ -303,10 +303,10 @@ messages:
       lon: -122.3994
     event_ref: E_FLOOD
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2012_Sandy_Hurricane
-      tweet_id: "262350176369397760"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2012_Sandy_Hurricane
+      external_id: "262350176369397760"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_021
     text: "Calgary holds its breath as flood waters advance. Surrounding communities are getting pummeled by Mother Nature. #yyc #yycflood"
@@ -318,10 +318,10 @@ messages:
       lon: -122.43939999999999
     event_ref: E_FLOOD
     band: 3
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Alberta_Floods
-      tweet_id: "347868571105382400"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Alberta_Floods
+      external_id: "347868571105382400"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_022
     text: Imagining the floods are like a zombie apocalypse makes things so much cooler
@@ -334,10 +334,10 @@ messages:
       geotype: shelter
     event_ref: E_FLOOD
     band: 3
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Alberta_Floods
-      tweet_id: "347869429935267840"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Alberta_Floods
+      external_id: "347869429935267840"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_023
     text: The river is getting crazy high here in Cochrane. Pray for so many already affected in Calgary and http://t.co/zpgGcDYu2A
@@ -349,10 +349,10 @@ messages:
       lon: -122.4494
     event_ref: E_FLOOD
     band: 3
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Alberta_Floods
-      tweet_id: "347871850006732800"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Alberta_Floods
+      external_id: "347871850006732800"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_024
     text: "@nenshi @cityofcalgary Any word of evacuating Chaparral Valley? We are kinda sitting right in the river bed... #newcommunity"
@@ -364,10 +364,10 @@ messages:
       lon: -122.39439999999999
     event_ref: E_FLOOD
     band: 3
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Alberta_Floods
-      tweet_id: "347877785810911233"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Alberta_Floods
+      external_id: "347877785810911233"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_025
     text: Follow @LethbridgeCity for updates on flood situation in Lethbridge.
@@ -379,10 +379,10 @@ messages:
       lon: -122.4194
     event_ref: E_FLOOD
     band: 3
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Alberta_Floods
-      tweet_id: "347877952207331329"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Alberta_Floods
+      external_id: "347877952207331329"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_026
     text: "Theyre frantically building a dyke in Mission. #yyc #abflood http://t.co/Ya6rb9GxlH"
@@ -394,10 +394,10 @@ messages:
       lon: -122.4294
     event_ref: E_FLOOD
     band: 3
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Alberta_Floods
-      tweet_id: "347878718003359745"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Alberta_Floods
+      external_id: "347878718003359745"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_027
     text: "'Bragg Creek' shows up at this time as Trend in Calgary http://t.co/T2y9IJub8b"
@@ -409,10 +409,10 @@ messages:
       lon: -122.4074
     event_ref: E_FLOOD
     band: 3
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Alberta_Floods
-      tweet_id: "347884018114633728"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Alberta_Floods
+      external_id: "347884018114633728"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_028
     text: "@cityofcalgary @CalgaryPolice is there anything I (or anyone) can do to help with the flood relief efforts?  #yycflood"
@@ -424,10 +424,10 @@ messages:
       lon: -122.3994
     event_ref: E_FLOOD
     band: 3
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Alberta_Floods
-      tweet_id: "347884973874888704"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Alberta_Floods
+      external_id: "347884973874888704"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_029
     text: S/o to my mum the emergency nurse who will have a hell of a night with flood victims. Thank you all @cityofcalgary  emergency services!
@@ -440,10 +440,10 @@ messages:
       geotype: shelter
     event_ref: E_FLOOD
     band: 3
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Alberta_Floods
-      tweet_id: "347888615206035456"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Alberta_Floods
+      external_id: "347888615206035456"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_030
     text: "Jamesons &amp; Rolling Rock with Darren, Tommy #albertaflood (@ Ship &amp; Anchor Pub) http://t.co/SD3ik2ZpHw"
@@ -455,10 +455,10 @@ messages:
       lon: -122.3844
     event_ref: E_FLOOD
     band: 3
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Alberta_Floods
-      tweet_id: "347888872329453569"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Alberta_Floods
+      external_id: "347888872329453569"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_031
     text: "@CalgaryPolice Is Hwacs playing any role for this evacuation order? Or down in High River?"
@@ -470,10 +470,10 @@ messages:
       lon: -122.4494
     event_ref: E_FLOOD
     band: 3
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Alberta_Floods
-      tweet_id: "347890712987181057"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Alberta_Floods
+      external_id: "347890712987181057"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_032
     text: "@amvanimere @chrisgggggg @MarcRondeau PS my room's on ninth floor if things really go to hell."
@@ -485,10 +485,10 @@ messages:
       lon: -122.39439999999999
     event_ref: E_FLOOD
     band: 3
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Alberta_Floods
-      tweet_id: "347890993430949889"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Alberta_Floods
+      external_id: "347890993430949889"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_033
     text: "The river along Sifton Road is encroaching on yards. Lower than Mission but running much faster. #yyc #ABflood http://t.co/C49kI8XXDY"
@@ -500,10 +500,10 @@ messages:
       lon: -122.4194
     event_ref: E_FLOOD
     band: 3
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Alberta_Floods
-      tweet_id: "347892270302912512"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Alberta_Floods
+      external_id: "347892270302912512"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_034
     text: "@GlobalCalgary: WATCH IN FULL: Alberta Floods 2013. A special edition of the Early News with @Linda_Olsen. #YYC #abflood when ?"
@@ -515,10 +515,10 @@ messages:
       lon: -122.4294
     event_ref: E_FLOOD
     band: 3
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Alberta_Floods
-      tweet_id: "347895081048612866"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Alberta_Floods
+      external_id: "347895081048612866"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_035
     text: "@gwendolynmr: Not much clearance left as the Elbow passes under the 4th street bridge in Mission.  @kkateykat  http://t.co/L6ENLSubdt"
@@ -530,10 +530,10 @@ messages:
       lon: -122.4074
     event_ref: E_FLOOD
     band: 3
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Alberta_Floods
-      tweet_id: "347897442085253122"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Alberta_Floods
+      external_id: "347897442085253122"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_036
     text: "@CalgaryPolice: Many communities having power and gas cut-off. You may not see #yycflood, but youll have no utilities so evacuate. #yyc"
@@ -546,10 +546,10 @@ messages:
       geotype: shelter
     event_ref: E_FLOOD
     band: 3
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Alberta_Floods
-      tweet_id: "347898388118904833"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Alberta_Floods
+      external_id: "347898388118904833"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_037
     text: "#calgary #flood #calgaryflood @ Centre St Bridge http://t.co/XQbOZgkbzb"
@@ -561,10 +561,10 @@ messages:
       lon: -122.43939999999999
     event_ref: E_FLOOD
     band: 3
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Alberta_Floods
-      tweet_id: "347900878398832640"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Alberta_Floods
+      external_id: "347900878398832640"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_038
     text: "The world is ending!!! (In Calgary, at least) #geeseapocalypse @ Langevin Bridge http://t.co/8z7UuiHUsI"
@@ -576,10 +576,10 @@ messages:
       lon: -122.3844
     event_ref: E_FLOOD
     band: 3
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Alberta_Floods
-      tweet_id: "347902890398085121"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Alberta_Floods
+      external_id: "347902890398085121"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_039
     text: "What a day in #Canmore , lets hope it's a better day tomorrow! no more #Canmoreflood http://t.co/48tcOf0XY3"
@@ -591,10 +591,10 @@ messages:
       lon: -122.4494
     event_ref: E_FLOOD
     band: 3
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Alberta_Floods
-      tweet_id: "347922297698525184"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Alberta_Floods
+      external_id: "347922297698525184"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_040
     text: "Where's that floatation device when you need it eh kharazny ? #dumpsterdiver #yycflood #atlantis  @ http://t.co/JC2xzWaGA7"
@@ -606,10 +606,10 @@ messages:
       lon: -122.39439999999999
     event_ref: E_FLOOD
     band: 3
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Alberta_Floods
-      tweet_id: "347922416892264448"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Alberta_Floods
+      external_id: "347922416892264448"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_041
     text: I'm thankful that the tornado missed my street, but I'm sorry for the destruction it has caused http://t.co/rjVA7fiAL0
@@ -621,10 +621,10 @@ messages:
       lon: -122.4194
     event_ref: E_FLOOD
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Oklahoma_Tornado
-      tweet_id: "336270541222723585"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Oklahoma_Tornado
+      external_id: "336270541222723585"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_042
     text: "Love hearing TV weather people anthropomorphize storms. The tornado is trying to get out of the clouds. #okwx"
@@ -636,10 +636,10 @@ messages:
       lon: -122.4294
     event_ref: E_FLOOD
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Oklahoma_Tornado
-      tweet_id: "336273620127072256"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Oklahoma_Tornado
+      external_id: "336273620127072256"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_043
     text: Aaah shit. Tornadoes in Shawnee. Gotta check on my peoples.
@@ -652,10 +652,10 @@ messages:
       geotype: shelter
     event_ref: E_FLOOD
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Oklahoma_Tornado
-      tweet_id: "336273821273305089"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Oklahoma_Tornado
+      external_id: "336273821273305089"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_044
     text: "@markvanbaale: Absolute tornado devastation being shown on News9 coverage from their chopper: http://t.co/UgJB1ZycZw #okwx Oh, Lord!"
@@ -667,10 +667,10 @@ messages:
       lon: -122.3994
     event_ref: E_FLOOD
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Oklahoma_Tornado
-      tweet_id: "336274503854329857"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Oklahoma_Tornado
+      external_id: "336274503854329857"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_045
     text: "@bripelts sorry that I can't find this funny. That's my hometown and people are very likely dead."
@@ -682,10 +682,10 @@ messages:
       lon: -122.43939999999999
     event_ref: E_FLOOD
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Oklahoma_Tornado
-      tweet_id: "336275416018997249"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Oklahoma_Tornado
+      external_id: "336275416018997249"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_046
     text: Debris field from wedge tornado. http://t.co/KLzfEBsl4f
@@ -697,10 +697,10 @@ messages:
       lon: -122.3844
     event_ref: E_FLOOD
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Oklahoma_Tornado
-      tweet_id: "336275920249823233"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Oklahoma_Tornado
+      external_id: "336275920249823233"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_047
     text: Damn a tornado just destroyed a whole neighborhood in oklahoma.
@@ -712,10 +712,10 @@ messages:
       lon: -122.4494
     event_ref: E_FLOOD
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Oklahoma_Tornado
-      tweet_id: "336279802543742976"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Oklahoma_Tornado
+      external_id: "336279802543742976"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_048
     text: "All that's on the news right now is #Shawnee cuz of the tornadoes!!!! Everyone pray!"
@@ -727,10 +727,10 @@ messages:
       lon: -122.39439999999999
     event_ref: E_FLOOD
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Oklahoma_Tornado
-      tweet_id: "336281460153675778"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Oklahoma_Tornado
+      external_id: "336281460153675778"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_049
     text: My thoughts and prayers go out to my friend @strikerokb
@@ -742,10 +742,10 @@ messages:
       lon: -122.4194
     event_ref: E_FLOOD
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Oklahoma_Tornado
-      tweet_id: "336289640162152448"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Oklahoma_Tornado
+      external_id: "336289640162152448"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_050
     text: Hard to go back to business as usual when I know people are suffering just two miles from me! :-( But I hear the Red Cross is in the area
@@ -758,10 +758,10 @@ messages:
       geotype: shelter
     event_ref: E_FLOOD
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Oklahoma_Tornado
-      tweet_id: "336294957151289347"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Oklahoma_Tornado
+      external_id: "336294957151289347"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_051
     text: Not expecting any more storms in OKC tonight but squall line will pass thru Stillwater &amp; pts East, wish we had a balloon tonight
@@ -773,10 +773,10 @@ messages:
       lon: -122.4074
     event_ref: E_FLOOD
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Oklahoma_Tornado
-      tweet_id: "336308291380588544"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Oklahoma_Tornado
+      external_id: "336308291380588544"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_052
     text: "@emilyrsutton Thanks for your updates and coverage today.  Appreciate your work in keeping ok families safe!"
@@ -788,10 +788,10 @@ messages:
       lon: -122.3994
     event_ref: E_FLOOD
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Oklahoma_Tornado
-      tweet_id: "336309857701482496"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Oklahoma_Tornado
+      external_id: "336309857701482496"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_053
     text: "@AAAOklahoma Yes I am thank you. No damage here was just overhead. http://t.co/uZ4GyfW296"
@@ -803,10 +803,10 @@ messages:
       lon: -122.43939999999999
     event_ref: E_FLOOD
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Oklahoma_Tornado
-      tweet_id: "336315788459905024"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Oklahoma_Tornado
+      external_id: "336315788459905024"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_054
     text: "@ruth_anne18 storms are supposed to be just as bad tomorrow. I say it should just be post poned."
@@ -818,10 +818,10 @@ messages:
       lon: -122.3844
     event_ref: E_FLOOD
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Oklahoma_Tornado
-      tweet_id: "336316375276605441"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Oklahoma_Tornado
+      external_id: "336316375276605441"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_055
     text: "@VivaLaJazzE thanks love:))) I'm okay!! Went right by my house and area though"
@@ -833,10 +833,10 @@ messages:
       lon: -122.4494
     event_ref: E_FLOOD
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Oklahoma_Tornado
-      tweet_id: "336317035648790529"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Oklahoma_Tornado
+      external_id: "336317035648790529"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_056
     text: "@wx_chip @islivingston saving lives.........drive towards storms headed for tulsa, kill them. Fail."
@@ -848,10 +848,10 @@ messages:
       lon: -122.39439999999999
     event_ref: E_FLOOD
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Oklahoma_Tornado
-      tweet_id: "336322354391158784"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Oklahoma_Tornado
+      external_id: "336322354391158784"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_057
     text: "NE Oklahoma and Lincoln Counties. RT @stormchaser4850: Update: Central Rural Elec Coop reports extensive damage to its utility system"
@@ -864,10 +864,10 @@ messages:
       geotype: shelter
     event_ref: E_FLOOD
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Oklahoma_Tornado
-      tweet_id: "336326744799850496"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Oklahoma_Tornado
+      external_id: "336326744799850496"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_058
     text: "@prairiestorm71 speeding of course lol! A lot of peeps fr Wichita storm trying to get to central OK were blasting 145kmhr+"
@@ -879,10 +879,10 @@ messages:
       lon: -122.4294
     event_ref: E_FLOOD
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Oklahoma_Tornado
-      tweet_id: "336330391751372800"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Oklahoma_Tornado
+      external_id: "336330391751372800"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_059
     text: "@curtismcauliff this was tornado that first started NW of Lake Thunderbird. One that first started in Edmond became large later, possible F4"
@@ -894,10 +894,10 @@ messages:
       lon: -122.4074
     event_ref: E_FLOOD
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Oklahoma_Tornado
-      tweet_id: "336331493712478210"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Oklahoma_Tornado
+      external_id: "336331493712478210"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_060
     text: "@treeb_jens we are good! Andy's family has property within 1 mile of where we know a tornado hit. But everyone I know is fine!"
@@ -909,10 +909,10 @@ messages:
       lon: -122.3994
     event_ref: E_FLOOD
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Oklahoma_Tornado
-      tweet_id: "336452212609925120"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Oklahoma_Tornado
+      external_id: "336452212609925120"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_061
     text: To ALL of my friends,in the UK &amp; Australia,stay safe &amp; look after yourself &amp; your loved ones
@@ -924,10 +924,10 @@ messages:
       lon: -122.43939999999999
     event_ref: E_FLOOD
     band: 3
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Queensland_Floods
-      tweet_id: "295322319302295552"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Queensland_Floods
+      external_id: "295322319302295552"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_062
     text: "@QPSmedia: Preliminary reports of trees &amp; powerlines down in Toowoomba. Strong winds gusting there. Stay off the roads. #bigwet"
@@ -939,10 +939,10 @@ messages:
       lon: -122.3844
     event_ref: E_FLOOD
     band: 3
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Queensland_Floods
-      tweet_id: "295323882863357952"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Queensland_Floods
+      external_id: "295323882863357952"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_063
     text: Well u may ask why is this fool taking pics of himself and dying his chest hair when he should be out rescuing those in the flood, slack eh!
@@ -954,10 +954,10 @@ messages:
       lon: -122.4494
     event_ref: E_FLOOD
     band: 3
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Queensland_Floods
-      tweet_id: "295323945165545472"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Queensland_Floods
+      external_id: "295323945165545472"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_064
     text: "@bricooper78 thanks mate, we are getting the tail end of a tropical cyclone &amp; now they are giving us tornado warnings! #iowaweather"
@@ -970,10 +970,10 @@ messages:
       geotype: shelter
     event_ref: E_FLOOD
     band: 3
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Queensland_Floods
-      tweet_id: "295325068559523840"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Queensland_Floods
+      external_id: "295325068559523840"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_065
     text: Stay safe everyone in this weather.
@@ -985,10 +985,10 @@ messages:
       lon: -122.4194
     event_ref: E_FLOOD
     band: 3
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Queensland_Floods
-      tweet_id: "295326613057449984"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Queensland_Floods
+      external_id: "295326613057449984"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_066
     text: "@bottcider_ hey ! well it has been raining non-stop, warnings of flood semua dah ada. so we're just hoping for the best lah ! mhmm~"
@@ -1000,10 +1000,10 @@ messages:
       lon: -122.4294
     event_ref: E_FLOOD
     band: 3
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Queensland_Floods
-      tweet_id: "295332241465282560"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Queensland_Floods
+      external_id: "295332241465282560"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_067
     text: "@wwwbigbaldhead Bit cloudy, worse In Queensland though :/ (floods and rain)"
@@ -1015,10 +1015,10 @@ messages:
       lon: -122.4074
     event_ref: E_FLOOD
     band: 3
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Queensland_Floods
-      tweet_id: "295333056615702530"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Queensland_Floods
+      external_id: "295333056615702530"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_068
     text: "@76_Burnsy man Woorim beach is getting smashed by huge swell and the dunes are vanishing #bigwet #storm #bribieisland http://t.co/vEzlpdvW"
@@ -1030,10 +1030,10 @@ messages:
       lon: -122.3994
     event_ref: E_FLOOD
     band: 3
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Queensland_Floods
-      tweet_id: "295340669403291648"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Queensland_Floods
+      external_id: "295340669403291648"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_069
     text: Reports of windows imploding in apartments along Alexandra Headland on the Sunshine Coast.
@@ -1045,10 +1045,10 @@ messages:
       lon: -122.43939999999999
     event_ref: E_FLOOD
     band: 3
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Queensland_Floods
-      tweet_id: "295341256106721281"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Queensland_Floods
+      external_id: "295341256106721281"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_070
     text: Severe weather warnings for brisbane, cyclones, floods and strong winds
@@ -1060,10 +1060,10 @@ messages:
       lon: -122.3844
     event_ref: E_FLOOD
     band: 3
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Queensland_Floods
-      tweet_id: "295341967003484161"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Queensland_Floods
+      external_id: "295341967003484161"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_071
     text: "@RadhikaR we as family are fine just a bit wet lol"
@@ -1076,10 +1076,10 @@ messages:
       geotype: shelter
     event_ref: E_FLOOD
     band: 3
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Queensland_Floods
-      tweet_id: "295342741544656896"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Queensland_Floods
+      external_id: "295342741544656896"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_072
     text: "@E_Laumea Hmm.. you say that now... Just wait. Lol! &amp;it's funny, when I came it was raining too. as well as every other time my family came"
@@ -1091,10 +1091,10 @@ messages:
       lon: -122.39439999999999
     event_ref: E_FLOOD
     band: 3
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Queensland_Floods
-      tweet_id: "295344772858667008"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Queensland_Floods
+      external_id: "295344772858667008"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_073
     text: "Flood water is halfway up our driveway in our new house #buggeroffloods"
@@ -1106,10 +1106,10 @@ messages:
       lon: -122.4194
     event_ref: E_FLOOD
     band: 3
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Queensland_Floods
-      tweet_id: "295345672851439616"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Queensland_Floods
+      external_id: "295345672851439616"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_074
     text: "@Mel_Tea yes hon, all the usual places are flooding... hopefully not as bad as Jan 10, 2011. Staying home &amp; not going anywhere. :-\\"
@@ -1121,10 +1121,10 @@ messages:
       lon: -122.4294
     event_ref: E_FLOOD
     band: 3
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Queensland_Floods
-      tweet_id: "295347593511325696"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Queensland_Floods
+      external_id: "295347593511325696"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_075
     text: "@walkabout71 you shouldn't be driving. All the roads are flooding"
@@ -1136,10 +1136,10 @@ messages:
       lon: -122.4074
     event_ref: E_FLOOD
     band: 3
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Queensland_Floods
-      tweet_id: "295352819828015104"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Queensland_Floods
+      external_id: "295352819828015104"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_076
     text: "Crazy storm happening in Brisbane #ItsGoodToBeOffWorkToday"
@@ -1151,10 +1151,10 @@ messages:
       lon: -122.3994
     event_ref: E_FLOOD
     band: 3
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Queensland_Floods
-      tweet_id: "295352902036365312"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Queensland_Floods
+      external_id: "295352902036365312"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_077
     text: "@kellyhd: Husband gave a mouthful to a dad at Ormiston who had his kids on boogie boards in  water. Honestly. #bigwet #qldfloods well done"
@@ -1166,10 +1166,10 @@ messages:
       lon: -122.43939999999999
     event_ref: E_FLOOD
     band: 3
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Queensland_Floods
-      tweet_id: "295355054666428418"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Queensland_Floods
+      external_id: "295355054666428418"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_078
     text: "@annakissed36 argh. plz stay as safe and dry as possible."
@@ -1182,10 +1182,10 @@ messages:
       geotype: shelter
     event_ref: E_FLOOD
     band: 3
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Queensland_Floods
-      tweet_id: "295356321706958848"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Queensland_Floods
+      external_id: "295356321706958848"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_079
     text: "@QPSmedia: Moreton Bay Regional Council have provided an up to date road condition report. #bigwet http://t.co/zDPZUuDq @Authentic_Angel"
@@ -1197,10 +1197,10 @@ messages:
       lon: -122.4494
     event_ref: E_FLOOD
     band: 3
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Queensland_Floods
-      tweet_id: "295369450230779904"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Queensland_Floods
+      external_id: "295369450230779904"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_080
     text: Heh my town made the news .... Least the rain has mostly stopped, just sporadic showers http://t.co/EhIpYRsA
@@ -1212,10 +1212,10 @@ messages:
       lon: -122.39439999999999
     event_ref: E_FLOOD
     band: 3
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_Queensland_Floods
-      tweet_id: "295370302823731200"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_Queensland_Floods
+      external_id: "295370302823731200"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_081
     text: "Drop some off in North Waco please thanks  RT@Andreaa_Kaye: .50 cent wing mon-tues?! Yeh im about to be Omw."
@@ -1227,10 +1227,10 @@ messages:
       lon: -122.4194
     event_ref: E_WILDFIRE
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_West_Texas_Explosion
-      tweet_id: "324318526305337345"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_West_Texas_Explosion
+      external_id: "324318526305337345"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_082
     text: Anyone know of any MAJOR explosions near Dallas....I-35 just got covered in gray smoke
@@ -1242,10 +1242,10 @@ messages:
       lon: -122.4294
     event_ref: E_WILDFIRE
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_West_Texas_Explosion
-      tweet_id: "324688495396405249"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_West_Texas_Explosion
+      external_id: "324688495396405249"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_083
     text: "RT @DFWscanner: NOT DFW - Just south of us in West, TX - Waco area - An explosion has taken place at a fertilizer plant in the... http:/ ..."
@@ -1257,10 +1257,10 @@ messages:
       lon: -122.4074
     event_ref: E_WILDFIRE
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_West_Texas_Explosion
-      tweet_id: "324690640568979456"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_West_Texas_Explosion
+      external_id: "324690640568979456"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_084
     text: "BREAKING NEWS:  WACO TEXAS Explosion, Injuries Reported At West Fertilizer Plant http://t.co/45WqTYCFA0"
@@ -1272,10 +1272,10 @@ messages:
       lon: -122.3994
     event_ref: E_WILDFIRE
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_West_Texas_Explosion
-      tweet_id: "324692895246467072"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_West_Texas_Explosion
+      external_id: "324692895246467072"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_085
     text: My uncle that lives in west had his windows blown out.
@@ -1288,10 +1288,10 @@ messages:
       geotype: shelter
     event_ref: E_WILDFIRE
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_West_Texas_Explosion
-      tweet_id: "324693440489205761"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_West_Texas_Explosion
+      external_id: "324693440489205761"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_086
     text: "RT @passantino: New photo of massive fertilizer plant explosion in West, TX http://t.co/OiQuSWd5w5 http://t.co/94L6rq7wj5"
@@ -1303,10 +1303,10 @@ messages:
       lon: -122.3844
     event_ref: E_WILDFIRE
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_West_Texas_Explosion
-      tweet_id: "324693819281006592"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_West_Texas_Explosion
+      external_id: "324693819281006592"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_087
     text: "RT @911BUFF: TEXAS: BREAKING NEWS - SHOCKING PHOTO SECONDS AFTER MASSIVE EXPLOSION AT FERTILIZER PLANT. MCI DECLARED! @passantino http:/ ..."
@@ -1318,10 +1318,10 @@ messages:
       lon: -122.4494
     event_ref: E_WILDFIRE
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_West_Texas_Explosion
-      tweet_id: "324693994003132416"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_West_Texas_Explosion
+      external_id: "324693994003132416"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_088
     text: This damn fire in west is huge af
@@ -1333,10 +1333,10 @@ messages:
       lon: -122.39439999999999
     event_ref: E_WILDFIRE
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_West_Texas_Explosion
-      tweet_id: "324694360342032385"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_West_Texas_Explosion
+      external_id: "324694360342032385"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_089
     text: ".MT @NewsBreaker: Plume of smoke after reported explosion at fertilizer plant explosion near Waco, TX (@passantino) http://t.co/lsDzElj5Mq"
@@ -1348,10 +1348,10 @@ messages:
       lon: -122.4194
     event_ref: E_WILDFIRE
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_West_Texas_Explosion
-      tweet_id: "324694398602457089"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_West_Texas_Explosion
+      external_id: "324694398602457089"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_090
     text: Heading to West, Texas north of Waco for big explosion at a fertilizer plant
@@ -1363,10 +1363,10 @@ messages:
       lon: -122.4294
     event_ref: E_WILDFIRE
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_West_Texas_Explosion
-      tweet_id: "324695223437512706"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_West_Texas_Explosion
+      external_id: "324695223437512706"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_091
     text: "FOX17:  Explosion Outside Waco, Texas; Injuries Reported http://t.co/qyyTtX7jEW"
@@ -1378,10 +1378,10 @@ messages:
       lon: -122.4074
     event_ref: E_WILDFIRE
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_West_Texas_Explosion
-      tweet_id: "324695496721567744"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_West_Texas_Explosion
+      external_id: "324695496721567744"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_092
     text: "TEXAS: MASSIVE EXPLOSION U/D - LOCAL HOSPITALS NOTIFIED. EVERY AVAILABLE AMBULANCE DISPATCHED. REPORTS OF CASUALTIES. http://t.co/gqNkSBKTtx"
@@ -1394,10 +1394,10 @@ messages:
       geotype: shelter
     event_ref: E_WILDFIRE
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_West_Texas_Explosion
-      tweet_id: "324695622387126272"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_West_Texas_Explosion
+      external_id: "324695622387126272"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_093
     text: "RT @ISNJH: Alert: report of HUGE/MASSIVE Explosion at fertilizer plant in West, TX near Waco. Multiple buildings on fire MCI Major Incid ..."
@@ -1409,10 +1409,10 @@ messages:
       lon: -122.43939999999999
     event_ref: E_WILDFIRE
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_West_Texas_Explosion
-      tweet_id: "324695782705995776"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_West_Texas_Explosion
+      external_id: "324695782705995776"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_094
     text: "RT @DFWscanner: West, TX Explosion *UPDATE - Sheriff's Department is requesting ALL hands on deck for the situation in West."
@@ -1424,10 +1424,10 @@ messages:
       lon: -122.3844
     event_ref: E_WILDFIRE
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_West_Texas_Explosion
-      tweet_id: "324695922359545856"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_West_Texas_Explosion
+      external_id: "324695922359545856"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_095
     text: "RT @snapcreeker: TEXAS: MASSIVE EXPLOSION U/D - LOCAL HOSPITALS NOTIFIED. EVERY AVAILABLE AMBULANCE DISPATCHED. REPORTS OF CASUALTIES. h ..."
@@ -1439,10 +1439,10 @@ messages:
       lon: -122.4494
     event_ref: E_WILDFIRE
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_West_Texas_Explosion
-      tweet_id: "324695955838480385"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_West_Texas_Explosion
+      external_id: "324695955838480385"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_096
     text: "RT @BlogsofWar: Whoa - RT @passantino: New photo of massive fertilizer plant explosion in West, TX http://t.co/JB5qAf3ZBO http://t.co/o0 ..."
@@ -1454,10 +1454,10 @@ messages:
       lon: -122.39439999999999
     event_ref: E_WILDFIRE
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_West_Texas_Explosion
-      tweet_id: "324696137363750912"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_West_Texas_Explosion
+      external_id: "324696137363750912"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_097
     text: "RT @911BUFF: TEXAS: BREAKING NEWS - MAJOR EXPLOSION WITH LOTS OF INJURIES REPORTED AT FERTILIZER PLANT. EXPLOSION FELT MILES AWAY! #911BUFF"
@@ -1469,10 +1469,10 @@ messages:
       lon: -122.4194
     event_ref: E_WILDFIRE
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_West_Texas_Explosion
-      tweet_id: "324696192728584194"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_West_Texas_Explosion
+      external_id: "324696192728584194"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_098
     text: "RT @garytx  FLASH/DEVELOPING: major fertilizer plant explosion in/near Waco, TX (maybe West). Gathering further. #txfire"
@@ -1484,10 +1484,10 @@ messages:
       lon: -122.4294
     event_ref: E_WILDFIRE
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_West_Texas_Explosion
-      tweet_id: "324696452158869505"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_West_Texas_Explosion
+      external_id: "324696452158869505"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_099
     text: "PHOTO FROM FERTILIZER PLANT EXPLOSION IN TEXAS: Many homes on fire including a middle school. Many people trapped http://t.co/Zfe8WdNBkW"
@@ -1500,10 +1500,10 @@ messages:
       geotype: shelter
     event_ref: E_WILDFIRE
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_West_Texas_Explosion
-      tweet_id: "324696593888583680"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_West_Texas_Explosion
+      external_id: "324696593888583680"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex
   - id: clx_100
     text: "RT @NewsBreaker: BREAKING: Dispatcher say disaster situation in Waco TX; all hands on deck amid reports of multiples injures following ..."
@@ -1515,8 +1515,8 @@ messages:
       lon: -122.3994
     event_ref: E_WILDFIRE
     band: 4
-    crisislex:
-      corpus: CrisisLexT6
-      crisis: 2013_West_Texas_Explosion
-      tweet_id: "324696689682313218"
+    provenance:
+      dataset: CrisisLexT6
+      event: 2013_West_Texas_Explosion
+      external_id: "324696689682313218"
       attribution: Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex

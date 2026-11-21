@@ -1,6 +1,6 @@
 /**
- * Pull 100 on-topic CrisisLex T6 tweets → compose/messages/resilience/resilience-crisislex.yaml
- * https://github.com/sajao/CrisisLex/tree/master/data (Olteanu et al., ICWSM 2014)
+ * Pull 100 on-topic social posts → compose/messages/resilience/resilience-social.yaml
+ * Upstream: https://github.com/sajao/CrisisLex/tree/master/data (Olteanu et al., ICWSM 2014)
  */
 import { createHash } from 'node:crypto'
 import { writeCorpusYaml } from './write-corpus-yaml.mjs'
@@ -78,25 +78,25 @@ async function fetchOnTopic(crisis) {
   for (const line of csv.split('\n')) {
     const parsed = parseCrisisLexLine(line)
     if (!parsed || parsed.topic !== 'on-topic') continue
-    if (parsed.text.length < 25 || parsed.text.length > 500) continue
     const key = dedupeKey(parsed.text)
     if (seen.has(key)) continue
     seen.add(key)
     rows.push(parsed)
   }
-  rows.sort((a, b) => a.tweet_id.localeCompare(b.tweet_id))
-  return rows.slice(0, PER_CRISIS)
+  return rows
 }
 
 async function main() {
   const messages = []
+  let n = 0
   for (const crisis of CRISES) {
-    const batch = await fetchOnTopic(crisis)
-    for (const row of batch) {
-      const n = messages.length
+    const onTopic = await fetchOnTopic(crisis)
+    for (let i = 0; i < Math.min(PER_CRISIS, onTopic.length); i++) {
+      const row = onTopic[i]
       const off = SESSION_OFFSETS[n % SESSION_OFFSETS.length]
+      n += 1
       messages.push({
-        id: `clx_${String(n + 1).padStart(3, '0')}`,
+        id: `clx_${String(messages.length + 1).padStart(3, '0')}`,
         text: row.text,
         lang: 'en',
         kind: kindFor(row.text),
@@ -108,10 +108,10 @@ async function main() {
         },
         event_ref: crisis.event_ref,
         band: crisis.band,
-        crisislex: {
-          corpus: 'CrisisLexT6',
-          crisis: crisis.dir,
-          tweet_id: row.tweet_id,
+        provenance: {
+          dataset: 'CrisisLexT6',
+          event: crisis.dir,
+          external_id: row.tweet_id,
           attribution:
             'Olteanu et al., CrisisLex (ICWSM 2014); github.com/sajao/CrisisLex',
         },
@@ -122,13 +122,13 @@ async function main() {
   }
 
   if (messages.length < TARGET_TOTAL) {
-    throw new Error(`Only collected ${messages.length} CrisisLex rows (wanted ${TARGET_TOTAL})`)
+    throw new Error(`Only collected ${messages.length} social rows (wanted ${TARGET_TOTAL})`)
   }
 
   writeCorpusYaml(
-    'resilience-crisislex',
+    'resilience-social',
     {
-      description: 'CrisisLex T6 on-topic tweets',
+      description: 'On-topic social posts (2012–2013 crisis events)',
       upstream: 'https://github.com/sajao/CrisisLex/tree/master/data',
     },
     messages,

@@ -27,7 +27,7 @@ const result = composeWords(text, table, labels, 'es')
 | `messages/daily/corpus.yaml` | Family everyday (`composeWords` + `expect` goldens) |
 | `messages/resilience/corpus.yaml` | Off-grid resilience (short set) |
 | `messages/resilience/resilience-synthetic.yaml` | 100 Ready.gov-style prompts (spatial token bench) |
-| `messages/resilience/resilience-crisislex.yaml` | 100 on-topic [CrisisLex T6](https://github.com/sajao/CrisisLex/tree/master/data) tweets |
+| `messages/resilience/resilience-social.yaml` | 100 on-topic social posts ([upstream CrisisLex T6](https://github.com/sajao/CrisisLex/tree/master/data)) |
 
 ```ts
 import { loadResilienceBenchMessages, readMessageCorpus } from '@local-hosting/compose/messages'
@@ -37,7 +37,7 @@ Regenerate:
 
 ```bash
 yarn messages:resilience:synthetic
-yarn messages:resilience:crisislex   # needs network
+yarn messages:resilience:social   # needs network
 ```
 
 Vitest: `test/message-corpora.test.ts`.

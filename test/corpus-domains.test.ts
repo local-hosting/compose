@@ -27,7 +27,7 @@ describe('composeWords by domain (YAML gold)', () => {
 })
 
 describe('resilience bench corpora', () => {
-  it('synthetic + CrisisLex yields 200 bench rows', () => {
+  it('synthetic + social yields 200 bench rows', () => {
     expect(loadResilienceBenchMessages()).toHaveLength(200)
   })
 })

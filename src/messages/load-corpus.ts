@@ -28,9 +28,9 @@ export function readMessageCorpus(id: MessageCorpusId): MessageCorpusDocument {
   return assertCorpusDoc(raw, file)
 }
 
-/** Resilience bench rows (synthetic + CrisisLex) for spatial / local-ai harnesses. */
+/** Resilience bench rows (synthetic + social corpus) for spatial / local-ai harnesses. */
 export function loadResilienceBenchMessages(): MessageRow[] {
   const synthetic = readMessageCorpus('resilience-synthetic')
-  const crisislex = readMessageCorpus('resilience-crisislex')
-  return [...synthetic.messages, ...crisislex.messages]
+  const social = readMessageCorpus('resilience-social')
+  return [...synthetic.messages, ...social.messages]
 }
